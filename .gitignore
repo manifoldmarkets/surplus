@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# design bundle screenshots (heavy, not needed in repo)
+design/surplus-software-incubator/project/screenshots/
