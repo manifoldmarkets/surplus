@@ -44,9 +44,8 @@ export default function Home() {
           <div className="hero-grid">
             <div>
               <p className="lede">
-                A program for builders who would rather <em>ship</em> than wait; who suspect that{" "}
-                <mark>equity is a beautiful mechanism</mark> for value alignment and credit
-                allocation; who can&rsquo;t stop thinking about a problem nobody else is solving.
+                &ldquo;<em>Surplus</em>&rdquo; is the value created through{" "}
+                <mark>positive-sum trades</mark>; what markets produce in abundance.
                 <span className="punch">Build it here.</span>
               </p>
             </div>
@@ -588,9 +587,9 @@ export default function Home() {
       <section className="cta" id="apply">
         <div className="wrap">
           <h2 className="cta-call">
-            <span className="y">CODE</span> FOR
+            <span className="y">CODE</span> FOR MASSIVE
             <br />
-            MASSIVE <span className="p">PUBLIC GOOD.</span>
+            <span className="p">PUBLIC GOOD.</span>
           </h2>
           <div className="cta-row">
             <p className="cta-sub">

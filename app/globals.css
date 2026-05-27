@@ -97,7 +97,7 @@ body::after {
 
 /* ============ MASTHEAD ============ */
 .masthead {
-  padding-top: 22px;
+  padding-top: 0;
 }
 .masthead .stripe {
   min-height: 30px;
@@ -121,7 +121,7 @@ body::after {
 /* ============ HERO ============ */
 .hero {
   position: relative;
-  padding: 36px 0 56px;
+  padding: 64px 0 56px;
   overflow: visible;
 }
 .hero .eyebrow-row {
@@ -975,10 +975,10 @@ body::after {
 }
 .cta-call {
   font-family: var(--font-display);
-  font-size: clamp(80px, 12vw, 180px);
+  font-size: clamp(64px, 8.5vw, 128px);
   line-height: 0.85;
   margin: 0;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.02em;
 }
 .cta-call .y {
   color: var(--ink-yellow);
