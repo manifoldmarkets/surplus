@@ -2,32 +2,34 @@ export default function Home() {
   return (
     <>
       {/* =================== MASTHEAD =================== */}
-      <header className="masthead">
-        <div className="stripe">
+      <header>
+        <div className="flex min-h-[30px] flex-wrap items-center justify-between gap-5 bg-ink-dark px-6 py-1.5 font-mono text-[10.5px] uppercase tracking-[0.14em] text-paper max-bp:flex-nowrap max-bp:justify-center max-bp:gap-2.5 max-bp:px-4 max-bp:py-2.5 max-bp:text-[10px] max-bp:tracking-widest">
           <span>☞&nbsp;&nbsp;Cohort begins July 20</span>
-          <span>
-            <b>Applications open</b> · Early deadline Jun 10 · Final Jun 24
+          <span className="max-bp:hidden">
+            <b className="text-ink-yellow">Applications open</b> · Early deadline Jun 10 · Final Jun 24
           </span>
-          <span>$100K + SAFE · 12 weeks · Berkeley</span>
+          <span className="max-bp:hidden">$100K + SAFE · 12 weeks · Berkeley</span>
         </div>
       </header>
 
       {/* =================== HERO =================== */}
-      <section className="hero">
+      <section className="relative overflow-visible pb-14 pt-16 max-bp:pb-10 max-bp:pt-9">
         <div className="wrap">
           <div className="hero-decor" aria-hidden="true">
             <div className="ring"></div>
             <div className="ht-fill"></div>
           </div>
 
-          <div className="eyebrow-row">
-            <span className="pill">A Software Incubator</span>
-            <span className="pill invert">
-              For <b>Massive Public Good</b>
+          <div className="mb-[18px] flex flex-wrap items-center gap-3 max-bp:gap-2">
+            <span className="bg-ink-dark px-3 py-[7px] font-mono text-[11px] uppercase tracking-[0.16em] text-paper whitespace-nowrap max-bp:whitespace-normal max-bp:text-[10.5px] max-bp:tracking-[0.12em]">
+              A Software Incubator
             </span>
-            <span className="ast">✻</span>
-            <span className="pill">
-              In the Age of <b>Transformative AI</b>
+            <span className="bg-ink-pink px-3 py-[7px] font-mono text-[11px] uppercase tracking-[0.16em] text-paper whitespace-nowrap max-bp:whitespace-normal max-bp:text-[10.5px] max-bp:tracking-[0.12em]">
+              For <b className="font-bold text-ink-dark">Massive Public Good</b>
+            </span>
+            <span className="font-display text-[22px] leading-none text-ink-blue">✻</span>
+            <span className="bg-ink-dark px-3 py-[7px] font-mono text-[11px] uppercase tracking-[0.16em] text-paper whitespace-nowrap max-bp:whitespace-normal max-bp:text-[10.5px] max-bp:tracking-[0.12em]">
+              In the Age of <b className="font-bold text-ink-yellow">Transformative AI</b>
             </span>
           </div>
 
@@ -43,7 +45,7 @@ export default function Home() {
             <span></span>
           </div>
 
-          <div className="hero-grid">
+          <div className="relative z-1 mt-11 grid grid-cols-[1.35fr_1fr] items-start gap-10 max-bp:mt-7 max-bp:grid-cols-1 max-bp:gap-7">
             <div>
               <p className="lede">
                 &ldquo;<em>Surplus</em>&rdquo; is the value created through{" "}
@@ -52,39 +54,55 @@ export default function Home() {
               </p>
             </div>
 
-            <aside className="hero-side">
-              <div className="factstack">
-                <div className="row">
-                  <span className="num">$100K</span>
-                  <span className="meta">
-                    <span className="lab">Investment, on a SAFE</span>
-                    <span className="val">$2M post-money cap</span>
+            <aside className="relative flex flex-col items-stretch gap-[22px]">
+              <div className="border-[3px] border-ink-dark bg-paper">
+                <div className="grid grid-cols-[110px_1fr] items-center gap-[14px] border-b-[1.5px] border-ink-dark p-[14px] last:border-b-0">
+                  <span className="font-display text-[26px] leading-none text-ink-pink">$100K</span>
+                  <span className="flex min-w-0 flex-col gap-1">
+                    <span className="font-condensed text-[13px] font-bold uppercase leading-[1.15] tracking-[0.04em]">
+                      Investment, on a SAFE
+                    </span>
+                    <span className="font-mono text-[10.5px] uppercase leading-[1.15] tracking-widest text-ink-blue">
+                      $2M post-money cap
+                    </span>
                   </span>
                 </div>
-                <div className="row">
-                  <span className="num">12</span>
-                  <span className="meta">
-                    <span className="lab">Weeks of programming</span>
-                    <span className="val">Jul 20 → Sep 18</span>
+                <div className="grid grid-cols-[110px_1fr] items-center gap-[14px] border-b-[1.5px] border-ink-dark p-[14px] last:border-b-0">
+                  <span className="font-display text-[26px] leading-none text-ink-pink">12</span>
+                  <span className="flex min-w-0 flex-col gap-1">
+                    <span className="font-condensed text-[13px] font-bold uppercase leading-[1.15] tracking-[0.04em]">
+                      Weeks of programming
+                    </span>
+                    <span className="font-mono text-[10.5px] uppercase leading-[1.15] tracking-widest text-ink-blue">
+                      Jul 20 → Sep 18
+                    </span>
                   </span>
                 </div>
-                <div className="row">
-                  <span className="num">2</span>
-                  <span className="meta">
-                    <span className="lab">Venues — Mox &amp; Lighthaven</span>
-                    <span className="val">Berkeley</span>
+                <div className="grid grid-cols-[110px_1fr] items-center gap-[14px] border-b-[1.5px] border-ink-dark p-[14px] last:border-b-0">
+                  <span className="font-display text-[26px] leading-none text-ink-pink">2</span>
+                  <span className="flex min-w-0 flex-col gap-1">
+                    <span className="font-condensed text-[13px] font-bold uppercase leading-[1.15] tracking-[0.04em]">
+                      Venues — Mox &amp; Lighthaven
+                    </span>
+                    <span className="font-mono text-[10.5px] uppercase leading-[1.15] tracking-widest text-ink-blue">
+                      Berkeley
+                    </span>
                   </span>
                 </div>
-                <div className="row">
-                  <span className="num">12&ndash;20</span>
-                  <span className="meta">
-                    <span className="lab">Founders in the cohort</span>
-                    <span className="val">A small, dense room</span>
+                <div className="grid grid-cols-[110px_1fr] items-center gap-[14px] border-b-[1.5px] border-ink-dark p-[14px] last:border-b-0">
+                  <span className="font-display text-[26px] leading-none text-ink-pink">12&ndash;20</span>
+                  <span className="flex min-w-0 flex-col gap-1">
+                    <span className="font-condensed text-[13px] font-bold uppercase leading-[1.15] tracking-[0.04em]">
+                      Founders in the cohort
+                    </span>
+                    <span className="font-mono text-[10.5px] uppercase leading-[1.15] tracking-widest text-ink-blue">
+                      A small, dense room
+                    </span>
                   </span>
                 </div>
               </div>
 
-              <div className="stamp-wrap">
+              <div className="flex justify-end pt-2 max-bp:justify-center">
                 <a href="#apply" className="stamp" aria-label="Apply now">
                   <span className="ghost"></span>
                   <span className="disc">
@@ -102,12 +120,12 @@ export default function Home() {
       </section>
 
       {/* =================== MANIFESTO =================== */}
-      <section className="manifesto">
-        <div className="banner">
-          —&nbsp;&nbsp;On the matter of <em>building good things</em>, plainly stated&nbsp;&nbsp;—
+      <section className="relative border-b-[3px] border-t-8 border-ink-dark pb-7">
+        <div className="mb-9 bg-ink-dark px-10 py-4 text-center font-condensed text-[clamp(18px,2.2vw,26px)] font-bold uppercase leading-[1.2] tracking-[0.06em] text-paper max-bp:px-[18px] max-bp:py-[14px] max-bp:text-[15px] max-bp:tracking-[0.04em]">
+          —&nbsp;&nbsp;On the matter of <em className="not-italic text-ink-yellow">building good things</em>, plainly stated&nbsp;&nbsp;—
         </div>
         <div className="wrap">
-          <div className="inner">
+          <div className="grid grid-cols-[180px_1fr_180px] gap-7 pt-4 max-bp:grid-cols-1 max-bp:gap-5">
             <div className="gloss">
               <span className="key">§&nbsp;Who</span>
               <span className="line">Founders who care about xrisk and flourishing futures.</span>
@@ -117,7 +135,7 @@ export default function Home() {
               <span className="line">A SAFE. Not your soul.</span>
             </div>
 
-            <div className="body">
+            <div className="manifesto-body">
               <p>
                 Surplus is an incubator for software startups, organized by <em>Manifund</em> and{" "}
                 <em>Lightcone</em>. We are looking for founders building tools for{" "}
@@ -140,7 +158,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="gloss" style={{ textAlign: "right" }}>
+            <div className="gloss text-right max-bp:text-left">
               <span className="key">§&nbsp;Run by</span>
               <span className="line">Manifund &amp; Lightcone Infrastructure.</span>
               <span className="key">§&nbsp;Office hours</span>
@@ -155,7 +173,7 @@ export default function Home() {
       </section>
 
       {/* =================== PROJECTS =================== */}
-      <section className="projects">
+      <section className="pb-10 pt-7">
         <div className="wrap">
           <div className="section-h">
             <span className="num">01</span>
@@ -167,7 +185,7 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="projects-intro">
+          <div className="projects-intro grid grid-cols-[1.4fr_1fr] items-start gap-10 pb-12 pt-9 max-bp:grid-cols-1 max-bp:gap-4 max-bp:pb-7 max-bp:pt-6">
             <p className="copy">
               We&rsquo;re open to many proposals, but here are <b>three categories</b> of projects
               we&rsquo;re particularly well-suited to incubate. If your idea is adjacent —{" "}
@@ -176,7 +194,7 @@ export default function Home() {
             <div className="pointer">☞ ☞ ☞</div>
           </div>
 
-          <div className="cat-grid">
+          <div className="grid grid-cols-3 border-l-[3px] border-t-[3px] border-ink-dark max-bp:grid-cols-1">
             <article className="cat">
               <span className="cat-bg" aria-hidden="true"></span>
               <div className="cat-head">
@@ -305,7 +323,7 @@ export default function Home() {
       </section>
 
       {/* =================== OFFERS =================== */}
-      <section className="offers">
+      <section className="pb-14 pt-9">
         <div className="wrap">
           <div className="section-h">
             <span className="num">02</span>
@@ -317,7 +335,7 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="offers-grid">
+          <div className="grid grid-cols-6 gap-4 pt-8 max-bp:grid-cols-1">
             <div className="offer">
               <div className="o-num">No. 01 — Capital</div>
               <div className="o-body">
@@ -340,8 +358,8 @@ export default function Home() {
               <div className="o-num">No. 03 — Office Hours</div>
               <div className="o-body">
                 Weekly office hours with{" "}
-                <span style={{ color: "var(--ink-yellow)" }}>Austin Chen</span> &amp;{" "}
-                <span style={{ color: "var(--ink-pink)" }}>Oliver Habryka</span>.
+                <span className="text-ink-yellow">Austin Chen</span> &amp;{" "}
+                <span className="text-ink-pink">Oliver Habryka</span>.
               </div>
               <div className="o-note">Bring real questions. Leave with real answers.</div>
             </div>
@@ -367,16 +385,14 @@ export default function Home() {
                 <b>—</b>&nbsp;Andreas Stuhlmueller · Geoff Ralston · David Holz · Emmett Shear ·{" "}
                 <em>and more to announce.</em>
               </div>
-              <div className="o-num" style={{ textAlign: "right" }}>
-                Weekly · In person
-              </div>
+              <div className="o-num text-right">Weekly · In person</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* =================== TIMELINE =================== */}
-      <section className="timeline">
+      <section className="pb-12 pt-8">
         <div className="wrap">
           <div className="section-h">
             <span className="num">03</span>
@@ -388,7 +404,7 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="tl-list">
+          <div className="mt-8 border-t-[3px] border-ink-dark">
             <div className="tl major">
               <span className="date">May 29</span>
               <span className="dot"></span>
@@ -450,7 +466,7 @@ export default function Home() {
       </section>
 
       {/* =================== FAQ =================== */}
-      <section className="faq">
+      <section className="pb-20 pt-8">
         <div className="wrap">
           <div className="section-h">
             <span className="num">04</span>
@@ -462,7 +478,7 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="faq-list">
+          <div className="mt-9 border-t-8 border-ink-dark">
             <article className="faq-item">
               <span className="q-num">Q1</span>
               <div>
@@ -587,14 +603,14 @@ export default function Home() {
 
       {/* =================== CTA =================== */}
       <section className="cta" id="apply">
-        <div className="wrap">
+        <div className="wrap z-1">
           <h2 className="cta-call">
             <span className="y">CODE</span> FOR MASSIVE
             <br />
             <span className="p">PUBLIC GOOD.</span>
           </h2>
-          <div className="cta-row">
-            <p className="cta-sub">
+          <div className="mt-[30px] grid grid-cols-[1fr_auto] items-end gap-10 border-t-[3px] border-paper pt-[30px] max-bp:grid-cols-1 max-bp:gap-6">
+            <p className="max-w-[40ch] font-serif text-[22px] leading-[1.4] max-bp:text-[18px]">
               Build the thing you can&rsquo;t stop thinking about. We&rsquo;ll give you the capital,
               the cohort, the kitchen, and ninety days of company.
             </p>
@@ -607,15 +623,15 @@ export default function Home() {
       </section>
 
       {/* =================== COLOPHON =================== */}
-      <footer className="colophon">
+      <footer className="bg-ink-dark pb-[50px] pt-[30px] font-mono text-[11px] uppercase tracking-[0.14em] text-paper">
         <div className="wrap">
-          <div className="row">
-            <span className="crest">SURPLUS — MMXXV</span>
+          <div className="flex flex-wrap items-center justify-between gap-6 border-t-[1.5px] border-dotted border-[rgba(241,232,210,0.4)] pt-[22px] max-bp:flex-col max-bp:items-start max-bp:gap-2">
+            <span className="font-display text-[18px] tracking-[0.06em] text-paper">SURPLUS — MMXXV</span>
             <span>
-              Organized by <b>Manifund</b> &amp; <b>Lightcone</b>
+              Organized by <b className="text-ink-yellow">Manifund</b> &amp; <b className="text-ink-yellow">Lightcone</b>
             </span>
             <span>
-              Printed in <span className="pink">three&nbsp;inks</span> on Berkeley paper
+              Printed in <span className="text-ink-pink">three&nbsp;inks</span> on Berkeley paper
             </span>
             <span>Demo Day · Sep&nbsp;18</span>
           </div>
