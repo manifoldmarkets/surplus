@@ -32,7 +32,7 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SURPLUS — A Software Incubator",
+  title: "Surplus — a software incubator",
   description:
     "A software incubator for massive public good in the age of transformative AI. Organized by Manifund & Lightcone. $100K + SAFE, 12 weeks, Berkeley.",
 };
