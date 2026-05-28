@@ -3,7 +3,7 @@ export default function Home() {
     <>
       {/* =================== MASTHEAD =================== */}
       <header>
-        <div className="flex flex-wrap items-center justify-between gap-5 bg-ink-dark px-6 py-1.5 font-mono text-xs uppercase tracking-widest text-paper max-bp:flex-nowrap max-bp:justify-center max-bp:gap-2.5 max-bp:px-4 max-bp:py-2.5">
+        <div className="flex flex-wrap items-center justify-between gap-5 bg-ink-dark px-6 py-1.5 font-mono text-sm uppercase tracking-widest text-paper max-bp:flex-nowrap max-bp:justify-center max-bp:gap-2.5 max-bp:px-4 max-bp:py-2.5">
           <span>☞&nbsp;&nbsp;Cohort begins July 20</span>
           <span className="max-bp:hidden">
             <b className="text-ink-yellow">Applications open</b> · Early deadline Jun 10 · Final Jun 24
@@ -24,14 +24,14 @@ export default function Home() {
           </div>
 
           <div className="mb-[18px] flex flex-wrap items-center gap-3 max-bp:gap-2">
-            <span className="whitespace-nowrap bg-ink-dark px-3 py-1.5 font-mono text-xs uppercase tracking-widest text-paper max-bp:whitespace-normal">
+            <span className="whitespace-nowrap bg-ink-dark px-3 py-1.5 font-mono text-sm uppercase tracking-widest text-paper max-bp:whitespace-normal">
               A Software Incubator
             </span>
-            <span className="whitespace-nowrap bg-ink-pink px-3 py-1.5 font-mono text-xs uppercase tracking-widest text-paper max-bp:whitespace-normal">
+            <span className="whitespace-nowrap bg-ink-pink px-3 py-1.5 font-mono text-sm uppercase tracking-widest text-paper max-bp:whitespace-normal">
               For <b className="font-bold text-ink-dark">Massive Public Good</b>
             </span>
             <span className="font-display text-xl leading-none text-ink-blue">✻</span>
-            <span className="whitespace-nowrap bg-ink-dark px-3 py-1.5 font-mono text-xs uppercase tracking-widest text-paper max-bp:whitespace-normal">
+            <span className="whitespace-nowrap bg-ink-dark px-3 py-1.5 font-mono text-sm uppercase tracking-widest text-paper max-bp:whitespace-normal">
               In the Age of <b className="font-bold text-ink-yellow">Transformative AI</b>
             </span>
           </div>
@@ -40,7 +40,7 @@ export default function Home() {
             SUR<span className="misreg-accent text-ink-pink">PLUS</span>
           </h1>
 
-          <div className="mt-1 flex items-baseline justify-between border-t-[3px] border-ink-dark pt-2.5 font-mono text-xs uppercase tracking-widest max-bp:flex-col max-bp:items-start max-bp:gap-1.5">
+          <div className="mt-1 flex items-baseline justify-between border-t-[3px] border-ink-dark pt-2.5 font-mono text-sm uppercase tracking-widest max-bp:flex-col max-bp:items-start max-bp:gap-1.5">
             <span>☞&nbsp;&nbsp;An incubator for software startups</span>
             <span>3 months · starting late July</span>
             <span>Organized by Manifund &amp; Lightcone</span>
@@ -67,7 +67,7 @@ export default function Home() {
                     <span className="font-condensed text-[13px] font-bold uppercase leading-[1.15] tracking-wide">
                       Investment, on a SAFE
                     </span>
-                    <span className="font-mono text-[11px] uppercase leading-[1.15] tracking-widest text-ink-blue">
+                    <span className="font-mono text-[13px] uppercase leading-[1.15] tracking-widest text-ink-blue">
                       $2M post-money cap
                     </span>
                   </span>
@@ -78,7 +78,7 @@ export default function Home() {
                     <span className="font-condensed text-[13px] font-bold uppercase leading-[1.15] tracking-wide">
                       Weeks of programming
                     </span>
-                    <span className="font-mono text-[11px] uppercase leading-[1.15] tracking-widest text-ink-blue">
+                    <span className="font-mono text-[13px] uppercase leading-[1.15] tracking-widest text-ink-blue">
                       Jul 20 → Sep 18
                     </span>
                   </span>
@@ -89,7 +89,7 @@ export default function Home() {
                     <span className="font-condensed text-[13px] font-bold uppercase leading-[1.15] tracking-wide">
                       Venues — Mox &amp; Lighthaven
                     </span>
-                    <span className="font-mono text-[11px] uppercase leading-[1.15] tracking-widest text-ink-blue">
+                    <span className="font-mono text-[13px] uppercase leading-[1.15] tracking-widest text-ink-blue">
                       Berkeley
                     </span>
                   </span>
@@ -100,7 +100,7 @@ export default function Home() {
                     <span className="font-condensed text-[13px] font-bold uppercase leading-[1.15] tracking-wide">
                       Founders in the cohort
                     </span>
-                    <span className="font-mono text-[11px] uppercase leading-[1.15] tracking-widest text-ink-blue">
+                    <span className="font-mono text-[13px] uppercase leading-[1.15] tracking-widest text-ink-blue">
                       A small, dense room
                     </span>
                   </span>
@@ -117,7 +117,7 @@ export default function Home() {
                   <span className="absolute inset-0 grid place-items-center rounded-full bg-ink-pink text-center text-paper shadow-[inset_0_0_0_4px_var(--color-paper),inset_0_0_0_6px_var(--color-ink-pink)]">
                     <span className="flex flex-col items-center gap-1.5">
                       <span className="font-display text-5xl leading-none tracking-wide max-bp:text-4xl">APPLY</span>
-                      <span className="font-mono text-xs uppercase tracking-widest">By June 24th</span>
+                      <span className="font-mono text-sm uppercase tracking-widest">By June 24th</span>
                       <span className="mt-0.5 font-display text-xl tracking-wider">☞ ☞ ☞</span>
                     </span>
                   </span>
@@ -135,7 +135,7 @@ export default function Home() {
         </div>
         <div className="relative mx-auto max-w-[1320px] px-14 max-bp:px-5">
           <div className="grid grid-cols-[180px_1fr_180px] gap-7 pt-4 max-bp:grid-cols-1 max-bp:gap-5">
-            <div className="font-mono text-xs uppercase leading-normal tracking-widest">
+            <div className="font-mono text-sm uppercase leading-normal tracking-widest">
               <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;Who</span>
               <span className="mt-1 block opacity-85">Founders who care about xrisk and flourishing futures.</span>
               <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;Where</span>
@@ -167,7 +167,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="text-right font-mono text-xs uppercase leading-normal tracking-widest max-bp:text-left">
+            <div className="text-right font-mono text-sm uppercase leading-normal tracking-widest max-bp:text-left">
               <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;Run by</span>
               <span className="mt-1 block opacity-85">Manifund &amp; Lightcone Infrastructure.</span>
               <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;Office hours</span>
@@ -189,7 +189,7 @@ export default function Home() {
             <h2 className="font-condensed text-6xl font-bold uppercase leading-none max-bp:text-3xl">
               Projects We&rsquo;re Excited For
             </h2>
-            <span className="pb-2.5 text-right font-mono text-xs uppercase tracking-widest max-bp:hidden [&_b]:text-ink-pink">
+            <span className="pb-2.5 text-right font-mono text-sm uppercase tracking-widest max-bp:hidden [&_b]:text-ink-pink">
               Three categories
               <br />
               <b>— not exhaustive —</b>
@@ -223,7 +223,7 @@ export default function Home() {
                 LLM-powered tools that help people think better, work together, and build common
                 knowledge.
               </p>
-              <div className="mb-3 border-y-[1.5px] border-ink-dark py-1.5 font-mono text-xs uppercase tracking-widest text-ink-blue">
+              <div className="mb-3 border-y-[1.5px] border-ink-dark py-1.5 font-mono text-sm uppercase tracking-widest text-ink-blue">
                 — Examples —
               </div>
               <ul className="font-serif text-sm leading-snug [&_a:hover]:bg-ink-yellow [&_a:hover]:text-ink-dark [&_a:hover]:no-underline [&_a]:text-ink-blue [&_a]:underline [&_a]:decoration-1 [&_a]:underline-offset-2 [&_li:last-child]:border-b-0 [&_li]:relative [&_li]:border-b [&_li]:border-dotted [&_li]:border-ink-dark/40 [&_li]:py-[7px] [&_li]:pl-[22px] [&_li]:before:absolute [&_li]:before:left-0 [&_li]:before:top-[7px] [&_li]:before:text-sm [&_li]:before:text-ink-pink [&_li]:before:content-['✦']">
@@ -271,7 +271,7 @@ export default function Home() {
                 Many concepts in AI safety could be translated for a wider audience, with thoughtful
                 design and an eye for virality.
               </p>
-              <div className="mb-3 border-y-[1.5px] border-ink-dark py-1.5 font-mono text-xs uppercase tracking-widest text-ink-blue">
+              <div className="mb-3 border-y-[1.5px] border-ink-dark py-1.5 font-mono text-sm uppercase tracking-widest text-ink-blue">
                 — Examples —
               </div>
               <ul className="font-serif text-sm leading-snug [&_a:hover]:bg-ink-yellow [&_a:hover]:text-ink-dark [&_a:hover]:no-underline [&_a]:text-ink-blue [&_a]:underline [&_a]:decoration-1 [&_a]:underline-offset-2 [&_li:last-child]:border-b-0 [&_li]:relative [&_li]:border-b [&_li]:border-dotted [&_li]:border-ink-dark/40 [&_li]:py-[7px] [&_li]:pl-[22px] [&_li]:before:absolute [&_li]:before:left-0 [&_li]:before:top-[7px] [&_li]:before:text-sm [&_li]:before:text-ink-pink [&_li]:before:content-['✦']">
@@ -315,7 +315,7 @@ export default function Home() {
                 Marketplaces or platforms, addressing common problems shared by people and orgs
                 working to reduce xrisk.
               </p>
-              <div className="mb-3 border-y-[1.5px] border-ink-dark py-1.5 font-mono text-xs uppercase tracking-widest text-ink-blue">
+              <div className="mb-3 border-y-[1.5px] border-ink-dark py-1.5 font-mono text-sm uppercase tracking-widest text-ink-blue">
                 — Examples —
               </div>
               <ul className="font-serif text-sm leading-snug [&_a:hover]:bg-ink-yellow [&_a:hover]:text-ink-dark [&_a:hover]:no-underline [&_a]:text-ink-blue [&_a]:underline [&_a]:decoration-1 [&_a]:underline-offset-2 [&_li:last-child]:border-b-0 [&_li]:relative [&_li]:border-b [&_li]:border-dotted [&_li]:border-ink-dark/40 [&_li]:py-[7px] [&_li]:pl-[22px] [&_li]:before:absolute [&_li]:before:left-0 [&_li]:before:top-[7px] [&_li]:before:text-sm [&_li]:before:text-ink-pink [&_li]:before:content-['✦']">
@@ -364,7 +364,7 @@ export default function Home() {
             <h2 className="font-condensed text-6xl font-bold uppercase leading-none max-bp:text-3xl">
               What We Offer
             </h2>
-            <span className="pb-2.5 text-right font-mono text-xs uppercase tracking-widest max-bp:hidden [&_b]:text-ink-pink">
+            <span className="pb-2.5 text-right font-mono text-sm uppercase tracking-widest max-bp:hidden [&_b]:text-ink-pink">
               Capital · Community
               <br />
               Office hours · <b>Demo Day</b>
@@ -373,7 +373,7 @@ export default function Home() {
 
           <div className="grid grid-cols-6 gap-4 pt-8 max-bp:grid-cols-1">
             <div className="relative col-span-2 flex min-h-[220px] flex-col justify-between border-[3px] border-ink-dark bg-ink-pink px-[18px] pb-5 pt-[22px] text-paper max-bp:col-span-1 max-bp:min-h-0">
-              <div className="font-mono text-xs uppercase tracking-widest opacity-70">No. 01 — Capital</div>
+              <div className="font-mono text-sm uppercase tracking-widest opacity-70">No. 01 — Capital</div>
               <div className="mt-2.5 font-condensed text-3xl font-bold uppercase leading-none tracking-wide max-bp:text-xl">
                 <span className="font-display text-6xl leading-none max-bp:text-5xl">$100K</span>
                 <br />
@@ -383,7 +383,7 @@ export default function Home() {
             </div>
 
             <div className="relative col-span-2 flex min-h-[220px] flex-col justify-between border-[3px] border-ink-dark bg-paper px-[18px] pb-5 pt-[22px] max-bp:col-span-1 max-bp:min-h-0">
-              <div className="font-mono text-xs uppercase tracking-widest opacity-70">No. 02 — Cohort</div>
+              <div className="font-mono text-sm uppercase tracking-widest opacity-70">No. 02 — Cohort</div>
               <div className="mt-2.5 font-condensed text-3xl font-bold uppercase leading-none tracking-wide max-bp:text-xl">
                 A cohort of founders who care about xrisk and <em>flourishing futures.</em>
               </div>
@@ -393,7 +393,7 @@ export default function Home() {
             </div>
 
             <div className="relative col-span-2 flex min-h-[220px] flex-col justify-between border-[3px] border-ink-dark bg-ink-dark px-[18px] pb-5 pt-[22px] text-paper max-bp:col-span-1 max-bp:min-h-0">
-              <div className="font-mono text-xs uppercase tracking-widest opacity-70">No. 03 — Office Hours</div>
+              <div className="font-mono text-sm uppercase tracking-widest opacity-70">No. 03 — Office Hours</div>
               <div className="mt-2.5 font-condensed text-3xl font-bold uppercase leading-none tracking-wide max-bp:text-xl">
                 Weekly office hours with <span className="text-ink-yellow">Austin Chen</span> &amp;{" "}
                 <span className="text-ink-pink">Oliver Habryka</span>.
@@ -404,7 +404,7 @@ export default function Home() {
             </div>
 
             <div className="relative col-span-3 flex min-h-[220px] flex-col justify-between border-[3px] border-ink-dark bg-paper px-[18px] pb-5 pt-[22px] max-bp:col-span-1 max-bp:min-h-0">
-              <div className="font-mono text-xs uppercase tracking-widest opacity-70">No. 04 — Place</div>
+              <div className="font-mono text-sm uppercase tracking-widest opacity-70">No. 04 — Place</div>
               <div className="mt-2.5 font-condensed text-3xl font-bold uppercase leading-none tracking-wide max-bp:text-xl">
                 Space to work at Mox &amp; Lighthaven.
               </div>
@@ -415,7 +415,7 @@ export default function Home() {
             </div>
 
             <div className="relative col-span-3 flex min-h-[220px] flex-col justify-between border-[3px] border-ink-dark bg-ink-yellow px-[18px] pb-5 pt-[22px] max-bp:col-span-1 max-bp:min-h-0">
-              <div className="font-mono text-xs uppercase tracking-widest opacity-70">No. 05 — Demo Day</div>
+              <div className="font-mono text-sm uppercase tracking-widest opacity-70">No. 05 — Demo Day</div>
               <div className="mt-2.5 font-condensed text-3xl font-bold uppercase leading-none tracking-wide max-bp:text-xl">
                 Demo Day with aligned VCs &amp; philanthropic funders.
               </div>
@@ -425,12 +425,12 @@ export default function Home() {
             </div>
 
             <div className="relative col-span-6 grid min-h-[220px] grid-cols-[auto_1fr_auto] items-center gap-7 border-[3px] border-ink-dark bg-paper-deep px-[18px] pb-5 pt-[22px] max-bp:col-span-1 max-bp:min-h-0 max-bp:grid-cols-1 max-bp:gap-3">
-              <div className="font-mono text-xs uppercase tracking-widest opacity-70">No. 06 — Speakers</div>
+              <div className="font-mono text-sm uppercase tracking-widest opacity-70">No. 06 — Speakers</div>
               <div className="font-condensed text-xl font-bold uppercase leading-tight [&_b]:text-ink-pink max-bp:text-lg">
                 <b>—</b>&nbsp;Andreas Stuhlmueller · Geoff Ralston · David Holz · Emmett Shear ·{" "}
                 <em>and more to announce.</em>
               </div>
-              <div className="text-right font-mono text-xs uppercase tracking-widest opacity-70">Weekly · In person</div>
+              <div className="text-right font-mono text-sm uppercase tracking-widest opacity-70">Weekly · In person</div>
             </div>
           </div>
         </div>
@@ -442,7 +442,7 @@ export default function Home() {
           <div className="grid grid-cols-[auto_1fr_auto] items-end gap-7 border-b-[3px] border-ink-dark pb-[18px] pt-18 max-bp:grid-cols-[auto_1fr] max-bp:gap-4 max-bp:pb-3.5 max-bp:pt-12">
             <span className="font-display text-8xl leading-none text-ink-pink misreg-blue max-bp:text-6xl">03</span>
             <h2 className="font-condensed text-6xl font-bold uppercase leading-none max-bp:text-3xl">Timeline</h2>
-            <span className="pb-2.5 text-right font-mono text-xs uppercase tracking-widest max-bp:hidden [&_b]:text-ink-pink">
+            <span className="pb-2.5 text-right font-mono text-sm uppercase tracking-widest max-bp:hidden [&_b]:text-ink-pink">
               May → September <b>2025</b>
               <br />
               Twelve weeks of programming
@@ -456,7 +456,7 @@ export default function Home() {
               <span className="font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
                 Program Announced — Applications Open
               </span>
-              <span className="text-right font-mono text-xs uppercase tracking-widest text-ink-blue max-bp:hidden [&_b]:text-ink-pink">
+              <span className="text-right font-mono text-sm uppercase tracking-widest text-ink-blue max-bp:hidden [&_b]:text-ink-pink">
                 <b>Submit via Airtable</b>
               </span>
             </div>
@@ -471,7 +471,7 @@ export default function Home() {
               <span className="font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
                 Early Applications Due
               </span>
-              <span className="text-right font-mono text-xs uppercase tracking-widest text-ink-blue max-bp:hidden [&_b]:text-ink-pink">
+              <span className="text-right font-mono text-sm uppercase tracking-widest text-ink-blue max-bp:hidden [&_b]:text-ink-pink">
                 Reviewed on a rolling basis
               </span>
             </div>
@@ -486,7 +486,7 @@ export default function Home() {
               <span className="font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
                 All Applications Due
               </span>
-              <span className="text-right font-mono text-xs uppercase tracking-widest text-ink-blue max-bp:hidden [&_b]:text-ink-pink">
+              <span className="text-right font-mono text-sm uppercase tracking-widest text-ink-blue max-bp:hidden [&_b]:text-ink-pink">
                 <b>Final deadline</b>
               </span>
             </div>
@@ -505,7 +505,7 @@ export default function Home() {
                   <li>Maybe: 6 weeks at Lighthaven, 6 weeks at Mox</li>
                 </ul>
               </div>
-              <span className="text-right font-mono text-xs uppercase tracking-widest text-ink-blue max-bp:hidden [&_b]:text-ink-pink">
+              <span className="text-right font-mono text-sm uppercase tracking-widest text-ink-blue max-bp:hidden [&_b]:text-ink-pink">
                 Cohort begins
               </span>
             </div>
@@ -514,7 +514,7 @@ export default function Home() {
               <span className="font-display text-xl leading-none text-ink-pink max-bp:text-lg">Sep 18</span>
               <span className="h-7 w-7 justify-self-center rounded-full bg-ink-pink shadow-[0_0_0_4px_var(--color-paper),0_0_0_5.5px_var(--color-ink-pink)]"></span>
               <span className="font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">Demo Day</span>
-              <span className="text-right font-mono text-xs uppercase tracking-widest text-ink-blue max-bp:hidden [&_b]:text-ink-pink">
+              <span className="text-right font-mono text-sm uppercase tracking-widest text-ink-blue max-bp:hidden [&_b]:text-ink-pink">
                 <b>VCs &amp; Philanthropic Funders</b>
               </span>
             </div>
@@ -530,7 +530,7 @@ export default function Home() {
             <h2 className="font-condensed text-6xl font-bold uppercase leading-none max-bp:text-3xl">
               Frequently Asked
             </h2>
-            <span className="pb-2.5 text-right font-mono text-xs uppercase tracking-widest max-bp:hidden [&_b]:text-ink-pink">
+            <span className="pb-2.5 text-right font-mono text-sm uppercase tracking-widest max-bp:hidden [&_b]:text-ink-pink">
               Four questions
               <br />
               answered <b>plainly</b>
@@ -701,7 +701,7 @@ export default function Home() {
       </section>
 
       {/* =================== COLOPHON =================== */}
-      <footer className="bg-ink-dark pb-7 pt-5 font-mono text-[11px] uppercase tracking-[0.14em] text-paper">
+      <footer className="bg-ink-dark pb-7 pt-5 font-mono text-[13px] uppercase tracking-[0.14em] text-paper">
         <div className="relative mx-auto max-w-[1320px] px-14 max-bp:px-5">
           <div className="flex flex-wrap items-center justify-between gap-6 border-t-[1.5px] border-dotted border-paper/40 pt-4 max-bp:flex-col max-bp:items-start max-bp:gap-2">
             <span className="font-display text-lg tracking-[0.06em] text-paper">SURPLUS — MMXXV</span>

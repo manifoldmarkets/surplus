@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Bowlby_One, Antonio, Newsreader, JetBrains_Mono } from "next/font/google";
+import { Bowlby_One, Antonio, Newsreader, Inconsolata } from "next/font/google";
 import "./globals.css";
 
 const bowlby = Bowlby_One({
@@ -24,8 +24,8 @@ const newsreader = Newsreader({
   display: "swap",
 });
 
-const jetbrains = JetBrains_Mono({
-  variable: "--font-jetbrains",
+const inconsolata = Inconsolata({
+  variable: "--font-inconsolata",
   weight: ["400", "500", "700"],
   subsets: ["latin"],
   display: "swap",
@@ -45,7 +45,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${bowlby.variable} ${antonio.variable} ${newsreader.variable} ${jetbrains.variable}`}
+      className={`${bowlby.variable} ${antonio.variable} ${newsreader.variable} ${inconsolata.variable}`}
     >
       <body
         className="grain overflow-x-hidden bg-paper font-serif text-lg leading-normal text-ink-dark antialiased"
