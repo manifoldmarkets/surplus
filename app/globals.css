@@ -83,7 +83,6 @@
 @utility halftone {
   background-image: radial-gradient(circle at center, var(--color-ink-pink) var(--dot, 2.4px), transparent calc(var(--dot, 2.4px) + 0.2px));
   background-size: var(--dot-gap, 10px) var(--dot-gap, 10px);
-  mix-blend-mode: multiply;
 }
 
 @layer base {

@@ -20,7 +20,7 @@ export default function Home() {
             aria-hidden="true"
           >
             <div className="absolute inset-0 rounded-full border-[14px] border-ink-blue opacity-95 mix-blend-multiply"></div>
-            <div className="halftone absolute inset-9 rounded-full opacity-65"></div>
+            <div className="halftone absolute inset-9 rounded-full opacity-65 mix-blend-multiply"></div>
           </div>
 
           <div className="mb-[18px] flex flex-wrap items-center gap-3 max-bp:gap-2">
@@ -36,7 +36,7 @@ export default function Home() {
             </span>
           </div>
 
-          <h1 className="misreg relative m-0 font-display text-[clamp(72px,17vw,260px)] leading-[0.82] tracking-[-0.02em] text-ink-dark max-bp:whitespace-nowrap max-bp:text-[clamp(52px,17vw,120px)] max-bp:tracking-[-0.03em]">
+          <h1 className="misreg relative m-0 font-display text-[clamp(76px,18vw,276px)] leading-[0.8] tracking-[-0.045em] text-ink-dark max-bp:whitespace-nowrap max-bp:text-[clamp(54px,17.5vw,124px)] max-bp:tracking-[-0.055em]">
             SUR<span className="misreg-accent text-ink-pink">PLUS</span>
           </h1>
 
@@ -62,45 +62,45 @@ export default function Home() {
             <aside className="relative flex flex-col items-stretch gap-5">
               <div className="border-[3px] border-ink-dark bg-paper">
                 <div className="grid grid-cols-[110px_1fr] items-center gap-3.5 border-b-[1.5px] border-ink-dark p-3.5 last:border-b-0">
-                  <span className="font-display text-2xl leading-none text-ink-pink">$100K</span>
+                  <span className="font-display text-[26px] leading-none text-ink-pink">$100K</span>
                   <span className="flex min-w-0 flex-col gap-1">
-                    <span className="font-condensed text-sm font-bold uppercase leading-tight tracking-wide">
+                    <span className="font-condensed text-[13px] font-bold uppercase leading-[1.15] tracking-wide">
                       Investment, on a SAFE
                     </span>
-                    <span className="font-mono text-xs uppercase leading-tight tracking-widest text-ink-blue">
+                    <span className="font-mono text-[11px] uppercase leading-[1.15] tracking-widest text-ink-blue">
                       $2M post-money cap
                     </span>
                   </span>
                 </div>
                 <div className="grid grid-cols-[110px_1fr] items-center gap-3.5 border-b-[1.5px] border-ink-dark p-3.5 last:border-b-0">
-                  <span className="font-display text-2xl leading-none text-ink-pink">12</span>
+                  <span className="font-display text-[26px] leading-none text-ink-pink">12</span>
                   <span className="flex min-w-0 flex-col gap-1">
-                    <span className="font-condensed text-sm font-bold uppercase leading-tight tracking-wide">
+                    <span className="font-condensed text-[13px] font-bold uppercase leading-[1.15] tracking-wide">
                       Weeks of programming
                     </span>
-                    <span className="font-mono text-xs uppercase leading-tight tracking-widest text-ink-blue">
+                    <span className="font-mono text-[11px] uppercase leading-[1.15] tracking-widest text-ink-blue">
                       Jul 20 → Sep 18
                     </span>
                   </span>
                 </div>
                 <div className="grid grid-cols-[110px_1fr] items-center gap-3.5 border-b-[1.5px] border-ink-dark p-3.5 last:border-b-0">
-                  <span className="font-display text-2xl leading-none text-ink-pink">2</span>
+                  <span className="font-display text-[26px] leading-none text-ink-pink">2</span>
                   <span className="flex min-w-0 flex-col gap-1">
-                    <span className="font-condensed text-sm font-bold uppercase leading-tight tracking-wide">
+                    <span className="font-condensed text-[13px] font-bold uppercase leading-[1.15] tracking-wide">
                       Venues — Mox &amp; Lighthaven
                     </span>
-                    <span className="font-mono text-xs uppercase leading-tight tracking-widest text-ink-blue">
+                    <span className="font-mono text-[11px] uppercase leading-[1.15] tracking-widest text-ink-blue">
                       Berkeley
                     </span>
                   </span>
                 </div>
                 <div className="grid grid-cols-[110px_1fr] items-center gap-3.5 border-b-[1.5px] border-ink-dark p-3.5 last:border-b-0">
-                  <span className="font-display text-2xl leading-none text-ink-pink">12&ndash;20</span>
+                  <span className="font-display text-[26px] leading-none text-ink-pink">12&ndash;20</span>
                   <span className="flex min-w-0 flex-col gap-1">
-                    <span className="font-condensed text-sm font-bold uppercase leading-tight tracking-wide">
+                    <span className="font-condensed text-[13px] font-bold uppercase leading-[1.15] tracking-wide">
                       Founders in the cohort
                     </span>
-                    <span className="font-mono text-xs uppercase leading-tight tracking-widest text-ink-blue">
+                    <span className="font-mono text-[11px] uppercase leading-[1.15] tracking-widest text-ink-blue">
                       A small, dense room
                     </span>
                   </span>
@@ -303,7 +303,7 @@ export default function Home() {
             <article className="relative flex min-h-[540px] flex-col border-b-[3px] border-r-[3px] border-ink-dark bg-paper px-[26px] pb-[30px] pt-7 max-bp:min-h-0">
               <span
                 aria-hidden="true"
-                className="halftone pointer-events-none absolute right-3.5 top-3.5 h-16 w-16 opacity-80 [--dot-gap:9px] [--dot:2.2px]"
+                className="halftone pointer-events-none absolute right-3.5 top-3.5 h-16 w-16 opacity-80 mix-blend-multiply [--dot-gap:9px] [--dot:2.2px]"
               ></span>
               <div className="relative z-[1] mb-[18px] flex items-start gap-4">
                 <span className="font-display text-7xl leading-none text-ink-dark misreg-pink shrink-0">03</span>
@@ -679,7 +679,7 @@ export default function Home() {
           className="pointer-events-none absolute -bottom-[150px] -left-[120px] h-[420px] w-[420px] rounded-full bg-ink-blue opacity-40 mix-blend-screen"
         ></span>
         <div className="relative z-[1] mx-auto max-w-[1320px] px-14 max-bp:px-5">
-          <h2 className="font-display text-[clamp(64px,8.5vw,128px)] leading-none tracking-[-0.02em]">
+          <h2 className="font-display text-[clamp(64px,8.5vw,128px)] leading-[0.82] tracking-[-0.04em]">
             <span className="text-ink-yellow">CODE</span> FOR MASSIVE
             <br />
             <span className="text-ink-pink">PUBLIC GOOD.</span>
@@ -701,10 +701,10 @@ export default function Home() {
       </section>
 
       {/* =================== COLOPHON =================== */}
-      <footer className="bg-ink-dark pb-[50px] pt-[30px] font-mono text-xs uppercase tracking-widest text-paper">
+      <footer className="bg-ink-dark pb-7 pt-5 font-mono text-[11px] uppercase tracking-[0.14em] text-paper">
         <div className="relative mx-auto max-w-[1320px] px-14 max-bp:px-5">
-          <div className="flex flex-wrap items-center justify-between gap-6 border-t-[1.5px] border-dotted border-paper/40 pt-[22px] max-bp:flex-col max-bp:items-start max-bp:gap-2">
-            <span className="font-display text-lg tracking-wider text-paper">SURPLUS — MMXXV</span>
+          <div className="flex flex-wrap items-center justify-between gap-6 border-t-[1.5px] border-dotted border-paper/40 pt-4 max-bp:flex-col max-bp:items-start max-bp:gap-2">
+            <span className="font-display text-lg tracking-[0.06em] text-paper">SURPLUS — MMXXV</span>
             <span>
               Organized by <b className="text-ink-yellow">Manifund</b> &amp; <b className="text-ink-yellow">Lightcone</b>
             </span>
