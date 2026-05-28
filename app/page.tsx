@@ -39,6 +39,8 @@ export default function Home() {
             <span>☞&nbsp;&nbsp;An incubator for software startups</span>
             <span>3 months · starting late July</span>
             <span>Organized by Manifund &amp; Lightcone</span>
+            <span></span>
+            <span></span>
           </div>
 
           <div className="hero-grid">
