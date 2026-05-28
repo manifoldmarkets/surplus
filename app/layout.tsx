@@ -48,7 +48,7 @@ export default function RootLayout({
       className={`${bowlby.variable} ${antonio.variable} ${newsreader.variable} ${jetbrains.variable}`}
     >
       <body
-        className="grain overflow-x-hidden bg-paper font-serif text-[18px] leading-[1.45] text-ink-dark antialiased"
+        className="grain overflow-x-hidden bg-paper font-serif text-lg leading-normal text-ink-dark antialiased"
         data-palette="pink-blue"
       >
         {children}
