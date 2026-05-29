@@ -109,7 +109,9 @@ export default function Home() {
 
               <div className="flex justify-end pt-2 max-bp:justify-center">
                 <a
-                  href="#apply"
+                  href="https://manifund.org/surplus"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="Apply now"
                   className="relative inline-block h-[230px] w-[230px] -rotate-6 cursor-pointer no-underline transition-transform duration-200 ease-out hover:-rotate-3 hover:scale-105 active:rotate-[-2deg] active:scale-[0.99] max-bp:h-[190px] max-bp:w-[190px]"
                 >
@@ -691,7 +693,9 @@ export default function Home() {
             </p>
             <a
               className="inline-flex items-center gap-3.5 border-[3px] border-paper bg-ink-pink px-[30px] py-[22px] font-condensed text-3xl font-bold uppercase tracking-wide text-paper no-underline shadow-[8px_8px_0_var(--color-ink-blue)] transition-[transform,box-shadow] duration-200 ease-out hover:-translate-x-[3px] hover:-translate-y-[3px] hover:shadow-[11px_11px_0_var(--color-ink-blue)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-[3px_3px_0_var(--color-ink-blue)] max-bp:px-[22px] max-bp:py-4 max-bp:text-xl"
-              href="#apply"
+              href="https://manifund.org/surplus"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <span className="font-display text-3xl">☞</span>
               Apply by June 24
