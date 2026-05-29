@@ -80,17 +80,22 @@ export default function WelcomePopup() {
             &ndash;&nbsp;Austin
           </p>
 
+          {/* The <button> is the stationary hit target; the inner <span> does
+              the lift. Translating the button itself would slide its edge out
+              from under the cursor and cause a hover/unhover vibration loop. */}
           <button
             type="button"
             onClick={dismiss}
             disabled={!ready}
-            className="mt-6 w-full border-[3px] border-ink-dark bg-ink-pink px-5 py-3.5 font-condensed text-2xl font-bold uppercase tracking-wide text-paper max-sm:mt-5 max-sm:py-3 max-sm:text-xl transition-[transform,box-shadow,opacity] duration-150 ease-out enabled:cursor-pointer enabled:shadow-[5px_5px_0_var(--color-ink-blue)] enabled:hover:-translate-x-[2px] enabled:hover:-translate-y-[2px] enabled:hover:shadow-[7px_7px_0_var(--color-ink-blue)] enabled:active:translate-x-[2px] enabled:active:translate-y-[2px] enabled:active:shadow-[2px_2px_0_var(--color-ink-blue)] disabled:cursor-default disabled:bg-ink-dark disabled:opacity-80"
+            className="group mt-6 block w-full max-sm:mt-5 enabled:cursor-pointer disabled:cursor-default"
           >
-            {ready ? (
-              "Got it"
-            ) : (
-              <span className="tabular-nums">{remaining}…</span>
-            )}
+            <span className="flex items-center justify-center border-[3px] border-ink-dark bg-ink-pink px-5 py-3.5 font-condensed text-2xl font-bold uppercase tracking-wide text-paper shadow-[5px_5px_0_var(--color-ink-blue)] transition-[transform,box-shadow,opacity] duration-150 ease-out max-sm:py-3 max-sm:text-xl group-[&:enabled:hover]:-translate-x-[2px] group-[&:enabled:hover]:-translate-y-[2px] group-[&:enabled:hover]:shadow-[7px_7px_0_var(--color-ink-blue)] group-[&:enabled:active]:translate-x-[2px] group-[&:enabled:active]:translate-y-[2px] group-[&:enabled:active]:shadow-[2px_2px_0_var(--color-ink-blue)] group-disabled:bg-ink-dark group-disabled:opacity-80 group-disabled:shadow-none">
+              {ready ? (
+                "Got it"
+              ) : (
+                <span className="tabular-nums">{remaining}…</span>
+              )}
+            </span>
           </button>
         </div>
       </div>
