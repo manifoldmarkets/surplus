@@ -83,18 +83,18 @@ export default function Home() {
                   </span>
                 </div>
                 <div className="grid grid-cols-[110px_1fr] items-center gap-3.5 border-b-[1.5px] border-ink-dark p-3.5 last:border-b-0">
-                  <span className="font-display text-[26px] leading-none text-ink-pink">12</span>
+                  <span className="font-display text-[26px] leading-none text-ink-pink">3</span>
                   <span className="flex min-w-0 flex-col gap-1">
                     <span className="font-condensed text-[13px] font-bold uppercase leading-[1.15] tracking-wide">
-                      Weeks of programming
+                      Months of programming
                     </span>
                     <span className="font-mono text-[13px] uppercase leading-[1.15] tracking-widest text-ink-blue">
-                      Jul 20 → Sep 18
+                      Jul 27 → Oct 16
                     </span>
                   </span>
                 </div>
                 <div className="grid grid-cols-[110px_1fr] items-center gap-3.5 border-b-[1.5px] border-ink-dark p-3.5 last:border-b-0">
-                  <span className="font-display text-[26px] leading-none text-ink-pink">12&ndash;20</span>
+                  <span className="font-display text-[26px] leading-none text-ink-pink">~12</span>
                   <span className="flex min-w-0 flex-col gap-1">
                     <span className="font-condensed text-[13px] font-bold uppercase leading-[1.15] tracking-wide">
                       Founders in the cohort
@@ -132,7 +132,8 @@ export default function Home() {
       {/* =================== MANIFESTO =================== */}
       <section className="relative border-b-[3px] border-t-8 border-ink-dark pb-7">
         <div className="mb-9 bg-ink-dark px-10 py-4 text-center font-condensed text-[clamp(18px,2.2vw,26px)] font-bold uppercase leading-tight tracking-wider text-paper max-bp:px-5 max-bp:py-3.5 max-bp:text-sm">
-          —&nbsp;&nbsp;On the matter of <em className="not-italic text-ink-yellow">building good things</em>, plainly stated&nbsp;&nbsp;—
+          —&nbsp;&nbsp;Seed funding · Advice · Peers · Intros ·{" "}
+          <em className="not-italic text-ink-yellow">Space to focus</em>&nbsp;&nbsp;—
         </div>
         <div className="relative mx-auto max-w-[1320px] px-14 max-bp:px-5">
           <div className="grid grid-cols-[180px_1fr_180px] gap-7 pt-4 max-bp:grid-cols-1 max-bp:gap-5">
@@ -140,43 +141,46 @@ export default function Home() {
               <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;Who</span>
               <span className="mt-1 block opacity-85">Founders who care about xrisk and flourishing futures.</span>
               <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;Where</span>
-              <span className="mt-1 block opacity-85">Six weeks at Lighthaven, six weeks at Mox.</span>
-              <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;What it costs</span>
-              <span className="mt-1 block opacity-85">A SAFE. Not your soul.</span>
+              <span className="mt-1 block opacity-85">Office space at Mox, San Francisco.</span>
+              <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;When</span>
+              <span className="mt-1 block opacity-85">3 months, starting late July.</span>
             </div>
 
             <div className="min-w-0 break-words text-base leading-relaxed [&_b]:bg-ink-yellow [&_b]:px-1 [&_b]:font-semibold [&_em]:italic [&_em]:text-ink-blue [&_p]:mb-[1.4em]">
               <p className="first-letter:float-left first-letter:pr-2.5 first-letter:pt-1.5 first-letter:font-display first-letter:text-[82px] first-letter:leading-[0.85] first-letter:text-ink-pink max-bp:first-letter:text-6xl">
                 Surplus is an incubator for software startups, organized by <em>Manifund</em> and{" "}
-                <em>Mox</em>. We are looking for founders building tools for{" "}
-                <b>public good</b> in the age of transformative AI — people who would rather start
-                something than join something, who have an idea they can&rsquo;t stop thinking
-                about, who move fast and ship taste.
+                <em>Mox</em> — to create <b>massive public good</b> in the age of transformative
+                AI. It&rsquo;s a 3 month program, starting late July in SF. We provide seed
+                funding, advice, peers, intros, and space to focus.
               </p>
               <p>
-                We think now is an excellent time to start a for-profit. Vast torrents of
-                philanthropic funding sit downstream of Anthropic employees and the OpenAI
-                Foundation; 501c3s can buy services from, and invest in, for-profit corporations.
-                There is a $100B market waiting to be constructed — <em>shovels waiting to be sold</em>.
+                Now is an excellent time to start a for-profit, given{" "}
+                <a
+                  href="https://nanransohoff.substack.com/p/the-third-wave-of-american-philanthropy"
+                  className="text-ink-blue underline underline-offset-2 hover:bg-ink-yellow hover:text-ink-dark hover:no-underline"
+                >
+                  vast torrents of funding
+                </a>{" "}
+                available from Anthropic employees and OpenAI Foundation. 501c3s can pay for
+                for-profit services, and invest in for-profit corps. There&rsquo;s a $100B market
+                waiting to be constructed; <em>shovels waiting to be sold</em>.
               </p>
               <p>
                 Building great software takes more than coding.{" "}
                 <b>Product taste, visual design, distribution, sales and marketing</b> are all
-                things that 2026 LLMs still fail at. We have developed these supplementary skills,
-                and would love to foster them in a new generation of founders — while incubating
-                projects that produce massive good for the world.
+                things that 2026 LLMs still fail at. We&rsquo;ve developed these supplementary
+                skills needed to ship successful products, and would love to foster them in a new
+                generation of founders.
               </p>
             </div>
 
             <div className="text-right font-mono text-sm uppercase leading-normal tracking-widest max-bp:text-left">
-              <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;Run by</span>
-              <span className="mt-1 block opacity-85">Manifund &amp; Mox.</span>
+              <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;The deal</span>
+              <span className="mt-1 block opacity-85">$100k SAFE, at a $2m post-money cap.</span>
               <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;Office hours</span>
-              <span className="mt-1 block opacity-85">Weekly, with Austin Chen &amp; Oliver Habryka.</span>
-              <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;Speakers</span>
-              <span className="mt-1 block opacity-85">
-                Andreas Stuhlmueller, Geoff Ralston, David Holz, Emmett Shear.
-              </span>
+              <span className="mt-1 block opacity-85">Weekly office hours and mentorship.</span>
+              <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;Deadline</span>
+              <span className="mt-1 block opacity-85">Apply by June 24; decisions by July 1.</span>
             </div>
           </div>
         </div>
@@ -228,6 +232,10 @@ export default function Home() {
                 — Examples —
               </div>
               <ul className="font-serif text-sm leading-snug [&_a:hover]:bg-ink-yellow [&_a:hover]:text-ink-dark [&_a:hover]:no-underline [&_a]:text-ink-blue [&_a]:underline [&_a]:decoration-1 [&_a]:underline-offset-2 [&_li:last-child]:border-b-0 [&_li]:relative [&_li]:border-b [&_li]:border-dotted [&_li]:border-ink-dark/40 [&_li]:py-[7px] [&_li]:pl-[22px] [&_li]:before:absolute [&_li]:before:left-0 [&_li]:before:top-[7px] [&_li]:before:text-sm [&_li]:before:text-ink-pink [&_li]:before:content-['✦']">
+                <li>
+                  Guardian angels / &ldquo;Digital Twins&rdquo;, as{" "}
+                  <a href="https://gwern.net/guardian-angel">described by Gwern</a>
+                </li>
                 <li>
                   Fact-checking like{" "}
                   <a href="https://communitynotes.x.com/guide/en/about/introduction">
@@ -366,72 +374,74 @@ export default function Home() {
               What We Offer
             </h2>
             <span className="pb-2.5 text-right font-mono text-sm uppercase tracking-widest max-bp:hidden [&_b]:text-ink-pink">
-              Capital · Community
+              The deal,
               <br />
-              Office hours · <b>Demo Day</b>
+              <b>— in six parts —</b>
             </span>
           </div>
 
-          <div className="grid grid-cols-6 gap-4 pt-8 max-bp:grid-cols-1">
-            <div className="relative col-span-2 flex min-h-[220px] flex-col justify-between border-[3px] border-ink-dark bg-ink-pink px-[18px] pb-5 pt-[22px] text-paper max-bp:col-span-1 max-bp:min-h-0">
+          <div className="grid grid-cols-3 gap-4 pt-8 max-bp:grid-cols-1">
+            <div className="relative flex min-h-[220px] flex-col border-[3px] border-ink-dark bg-ink-pink px-[18px] pb-5 pt-[22px] text-paper max-bp:min-h-0">
               <div className="font-mono text-sm uppercase tracking-widest opacity-70">No. 01 — Capital</div>
               <div className="mt-2.5 font-condensed text-3xl font-bold uppercase leading-none tracking-wide max-bp:text-xl">
                 <span className="font-display text-6xl leading-none max-bp:text-5xl">$100K</span>
                 <br />
-                in investment, as a SAFE
+                investment, as a SAFE
               </div>
-              <div className="mt-auto pt-3 font-serif text-sm italic leading-snug">at a $2M post-money cap.</div>
+              <div className="mt-auto pt-3 font-serif text-sm italic leading-snug">
+                At a $2m post-money cap. (Maybe a grant if you&rsquo;re a committed nonprofit, but
+                we&rsquo;ll try to argue you out of this.)
+              </div>
             </div>
 
-            <div className="relative col-span-2 flex min-h-[220px] flex-col justify-between border-[3px] border-ink-dark bg-paper px-[18px] pb-5 pt-[22px] max-bp:col-span-1 max-bp:min-h-0">
+            <div className="relative flex min-h-[220px] flex-col border-[3px] border-ink-dark bg-paper px-[18px] pb-5 pt-[22px] max-bp:min-h-0">
               <div className="font-mono text-sm uppercase tracking-widest opacity-70">No. 02 — Cohort</div>
               <div className="mt-2.5 font-condensed text-3xl font-bold uppercase leading-none tracking-wide max-bp:text-xl">
-                A cohort of founders who care about xrisk and <em>flourishing futures.</em>
+                A cohort of <span className="text-ink-pink">~12 founders</span>
               </div>
               <div className="mt-auto pt-3 font-serif text-sm italic leading-snug">
-                Work alongside them — not above, not below.
+                Work alongside people who care about xrisk and flourishing futures.
               </div>
             </div>
 
-            <div className="relative col-span-2 flex min-h-[220px] flex-col justify-between border-[3px] border-ink-dark bg-ink-dark px-[18px] pb-5 pt-[22px] text-paper max-bp:col-span-1 max-bp:min-h-0">
-              <div className="font-mono text-sm uppercase tracking-widest opacity-70">No. 03 — Office Hours</div>
+            <div className="relative flex min-h-[220px] flex-col border-[3px] border-ink-dark bg-paper px-[18px] pb-5 pt-[22px] max-bp:min-h-0">
+              <div className="font-mono text-sm uppercase tracking-widest opacity-70">No. 03 — Mentorship</div>
               <div className="mt-2.5 font-condensed text-3xl font-bold uppercase leading-none tracking-wide max-bp:text-xl">
-                Weekly office hours with <span className="text-ink-yellow">Austin Chen</span> &amp;{" "}
-                <span className="text-ink-pink">Oliver Habryka</span>.
+                Weekly office hours &amp; mentorship
               </div>
               <div className="mt-auto pt-3 font-serif text-sm italic leading-snug">
-                Bring real questions. Leave with real answers.
+                Every week of the program.
               </div>
             </div>
 
-            <div className="relative col-span-3 flex min-h-[220px] flex-col justify-between border-[3px] border-ink-dark bg-paper px-[18px] pb-5 pt-[22px] max-bp:col-span-1 max-bp:min-h-0">
-              <div className="font-mono text-sm uppercase tracking-widest opacity-70">No. 04 — Place</div>
+            <div className="relative flex min-h-[220px] flex-col border-[3px] border-ink-dark bg-ink-dark px-[18px] pb-5 pt-[22px] text-paper max-bp:min-h-0">
+              <div className="font-mono text-sm uppercase tracking-widest opacity-70">No. 04 — Dinners</div>
               <div className="mt-2.5 font-condensed text-3xl font-bold uppercase leading-none tracking-wide max-bp:text-xl">
-                Space to work at Mox &amp; Lighthaven.
-              </div>
-              <ul className="mt-2 font-serif text-base leading-snug [&_li:last-child]:border-b-0 [&_li]:border-b [&_li]:border-dotted [&_li]:border-current [&_li]:py-1">
-                <li>Berkeley · Six weeks each</li>
-                <li>Dinners, hallway run-ins, late nights</li>
-              </ul>
-            </div>
-
-            <div className="relative col-span-3 flex min-h-[220px] flex-col justify-between border-[3px] border-ink-dark bg-ink-yellow px-[18px] pb-5 pt-[22px] max-bp:col-span-1 max-bp:min-h-0">
-              <div className="font-mono text-sm uppercase tracking-widest opacity-70">No. 05 — Demo Day</div>
-              <div className="mt-2.5 font-condensed text-3xl font-bold uppercase leading-none tracking-wide max-bp:text-xl">
-                Demo Day with aligned VCs &amp; philanthropic funders.
+                Dinners with <span className="text-ink-yellow">speakers</span>
               </div>
               <div className="mt-auto pt-3 font-serif text-sm italic leading-snug">
-                September 18 — closing the cohort.
+                Shared meals with founders and builders we admire.
               </div>
             </div>
 
-            <div className="relative col-span-6 grid min-h-[220px] grid-cols-[auto_1fr_auto] items-center gap-7 border-[3px] border-ink-dark bg-paper-deep px-[18px] pb-5 pt-[22px] max-bp:col-span-1 max-bp:min-h-0 max-bp:grid-cols-1 max-bp:gap-3">
-              <div className="font-mono text-sm uppercase tracking-widest opacity-70">No. 06 — Speakers</div>
-              <div className="font-condensed text-xl font-bold uppercase leading-tight [&_b]:text-ink-pink max-bp:text-lg">
-                <b>—</b>&nbsp;Andreas Stuhlmueller · Geoff Ralston · David Holz · Emmett Shear ·{" "}
-                <em>and more to announce.</em>
+            <div className="relative flex min-h-[220px] flex-col border-[3px] border-ink-dark bg-paper px-[18px] pb-5 pt-[22px] max-bp:min-h-0">
+              <div className="font-mono text-sm uppercase tracking-widest opacity-70">No. 05 — Place</div>
+              <div className="mt-2.5 font-condensed text-3xl font-bold uppercase leading-none tracking-wide max-bp:text-xl">
+                Office space at Mox
               </div>
-              <div className="text-right font-mono text-sm uppercase tracking-widest opacity-70">Weekly · In person</div>
+              <div className="mt-auto pt-3 font-serif text-sm italic leading-snug">
+                A space to focus, in San Francisco.
+              </div>
+            </div>
+
+            <div className="relative flex min-h-[220px] flex-col border-[3px] border-ink-dark bg-ink-yellow px-[18px] pb-5 pt-[22px] max-bp:min-h-0">
+              <div className="font-mono text-sm uppercase tracking-widest opacity-70">No. 06 — Demo Day</div>
+              <div className="mt-2.5 font-condensed text-3xl font-bold uppercase leading-none tracking-wide max-bp:text-xl">
+                Demo Day, <span className="text-ink-pink">Oct 16</span>
+              </div>
+              <div className="mt-auto pt-3 font-serif text-sm italic leading-snug">
+                Pitch to aligned VCs and philanthropic funders.
+              </div>
             </div>
           </div>
         </div>
@@ -444,66 +454,62 @@ export default function Home() {
             <span className="font-display text-8xl leading-none text-ink-pink misreg-blue max-bp:text-6xl">03</span>
             <h2 className="font-condensed text-6xl font-bold uppercase leading-none max-bp:text-3xl">Timeline</h2>
             <span className="pb-2.5 text-right font-mono text-sm uppercase tracking-widest max-bp:hidden [&_b]:text-ink-pink">
-              May → September <b>2025</b>
+              June → October <b>2026</b>
               <br />
-              Twelve weeks of programming
+              Mark your calendar
             </span>
           </div>
 
           <div className="mt-8 border-t-[3px] border-ink-dark">
             <div className="grid grid-cols-[160px_60px_1fr_240px] items-center gap-6 border-b-[3px] border-ink-dark py-[22px] max-bp:grid-cols-[88px_24px_1fr] max-bp:gap-3.5">
-              <span className="font-display text-xl leading-none text-ink-pink max-bp:text-lg">May 29</span>
+              <span className="font-display text-xl leading-none text-ink-pink max-bp:text-lg">Jun 11</span>
               <span className="h-7 w-7 justify-self-center rounded-full bg-ink-pink shadow-[0_0_0_4px_var(--color-paper),0_0_0_5.5px_var(--color-ink-pink)]"></span>
-              <span className="font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
-                Program Announced — Applications Open
-              </span>
+              <div>
+                <div className="font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
+                  Applications Open
+                </div>
+                <div className="mt-1.5 font-serif text-sm italic text-ink-dark">
+                  Apply at{" "}
+                  <a
+                    href="https://manifund.org/surplus"
+                    className="text-ink-blue underline underline-offset-2 hover:bg-ink-yellow hover:text-ink-dark hover:no-underline"
+                  >
+                    manifund.org/surplus
+                  </a>
+                  .
+                </div>
+              </div>
               <span className="text-right font-mono text-sm uppercase tracking-widest text-ink-blue max-bp:hidden [&_b]:text-ink-pink">
-                <b>Submit via Airtable</b>
+                <b>Open now</b>
               </span>
-            </div>
-
-            <div className="block border-b-[1.5px] border-ink-dark bg-ink-blue/5 py-2.5 pl-[200px] italic text-ink-blue max-bp:py-2 max-bp:pl-[88px] max-bp:text-sm">
-              <em>Jun 5–7 · LessOnline at Lighthaven</em>
-            </div>
-
-            <div className="grid grid-cols-[160px_60px_1fr_240px] items-center gap-6 border-b-[3px] border-ink-dark py-[22px] max-bp:grid-cols-[88px_24px_1fr] max-bp:gap-3.5">
-              <span className="font-display text-xl leading-none text-ink-pink max-bp:text-lg">Jun 10</span>
-              <span className="h-7 w-7 justify-self-center rounded-full bg-ink-pink shadow-[0_0_0_4px_var(--color-paper),0_0_0_5.5px_var(--color-ink-pink)]"></span>
-              <span className="font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
-                Early Applications Due
-              </span>
-              <span className="text-right font-mono text-sm uppercase tracking-widest text-ink-blue max-bp:hidden [&_b]:text-ink-pink">
-                Reviewed on a rolling basis
-              </span>
-            </div>
-
-            <div className="block border-b-[1.5px] border-ink-dark bg-ink-blue/5 py-2.5 pl-[200px] italic text-ink-blue max-bp:py-2 max-bp:pl-[88px] max-bp:text-sm">
-              <em>Jun 12–14 · Manifest at Lighthaven</em>
             </div>
 
             <div className="grid grid-cols-[160px_60px_1fr_240px] items-center gap-6 border-b-[3px] border-ink-dark py-[22px] max-bp:grid-cols-[88px_24px_1fr] max-bp:gap-3.5">
               <span className="font-display text-xl leading-none text-ink-pink max-bp:text-lg">Jun 24</span>
               <span className="h-7 w-7 justify-self-center rounded-full bg-ink-pink shadow-[0_0_0_4px_var(--color-paper),0_0_0_5.5px_var(--color-ink-pink)]"></span>
-              <span className="font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
-                All Applications Due
-              </span>
+              <div>
+                <div className="font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
+                  Applications Due
+                </div>
+                <div className="mt-1.5 font-serif text-sm italic text-ink-dark">
+                  Rolling video interviews; decisions by July 1.
+                </div>
+              </div>
               <span className="text-right font-mono text-sm uppercase tracking-widest text-ink-blue max-bp:hidden [&_b]:text-ink-pink">
                 <b>Final deadline</b>
               </span>
             </div>
 
             <div className="grid grid-cols-[160px_60px_1fr_240px] items-center gap-6 border-b-[3px] border-ink-dark py-[22px] max-bp:grid-cols-[88px_24px_1fr] max-bp:gap-3.5">
-              <span className="font-display text-xl leading-none text-ink-pink max-bp:text-lg">Jul 20</span>
+              <span className="font-display text-xl leading-none text-ink-pink max-bp:text-lg">Jul 27</span>
               <span className="h-7 w-7 justify-self-center rounded-full bg-ink-pink shadow-[0_0_0_4px_var(--color-paper),0_0_0_5.5px_var(--color-ink-pink)]"></span>
               <div>
                 <div className="font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
                   Program Kickoff
                 </div>
                 <ul className="mt-1.5 list-none font-serif text-sm italic text-ink-dark [&_li]:py-0.5 [&_li]:before:text-ink-pink [&_li]:before:content-['—_']">
-                  <li>12 weeks of programming</li>
-                  <li>Weekly speakers, workshops, office hours, dinners</li>
-                  <li>Maybe: 2 weeks of iterating, cofounder matching up front</li>
-                  <li>Maybe: 6 weeks at Lighthaven, 6 weeks at Mox</li>
+                  <li>2 weeks of ideating &amp; cofounder matching</li>
+                  <li>10 weeks of mentorship, dinners with speakers</li>
                 </ul>
               </div>
               <span className="text-right font-mono text-sm uppercase tracking-widest text-ink-blue max-bp:hidden [&_b]:text-ink-pink">
@@ -512,13 +518,86 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-[160px_60px_1fr_240px] items-center gap-6 border-b-[3px] border-ink-dark py-[22px] max-bp:grid-cols-[88px_24px_1fr] max-bp:gap-3.5">
-              <span className="font-display text-xl leading-none text-ink-pink max-bp:text-lg">Sep 18</span>
+              <span className="font-display text-xl leading-none text-ink-pink max-bp:text-lg">Oct 16</span>
               <span className="h-7 w-7 justify-self-center rounded-full bg-ink-pink shadow-[0_0_0_4px_var(--color-paper),0_0_0_5.5px_var(--color-ink-pink)]"></span>
-              <span className="font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">Demo Day</span>
+              <div>
+                <div className="font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
+                  Demo Day
+                </div>
+                <div className="mt-1.5 font-serif text-sm italic text-ink-dark">
+                  Pitch to an audience of angels, VCs and philanthropic funders.
+                </div>
+              </div>
               <span className="text-right font-mono text-sm uppercase tracking-widest text-ink-blue max-bp:hidden [&_b]:text-ink-pink">
-                <b>VCs &amp; Philanthropic Funders</b>
+                <b>The grand finale</b>
               </span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =================== VIRTUES =================== */}
+      <section className="relative mt-12 overflow-hidden border-y-[3px] border-t-8 border-ink-dark bg-paper-deep pb-16 pt-2 max-bp:mt-8 max-bp:pb-10">
+        <span
+          aria-hidden="true"
+          className="halftone pointer-events-none absolute -right-[140px] top-[210px] h-[340px] w-[340px] opacity-40 mix-blend-multiply [--dot-gap:12px] [--dot:2.6px]"
+        ></span>
+        <span
+          aria-hidden="true"
+          className="pointer-events-none absolute -bottom-[110px] -left-[90px] h-[280px] w-[280px] rounded-full bg-ink-yellow opacity-35 mix-blend-multiply"
+        ></span>
+        <div className="relative z-[1] mx-auto max-w-[1320px] px-14 max-bp:px-5">
+          <div className="grid grid-cols-[auto_1fr_auto] items-end gap-7 border-b-[3px] border-ink-dark pb-[18px] pt-12 max-bp:grid-cols-[auto_1fr] max-bp:gap-4 max-bp:pb-3.5 max-bp:pt-8">
+            <span className="font-display text-8xl leading-none text-ink-blue misreg-pink max-bp:text-6xl">04</span>
+            <h2 className="font-condensed text-6xl font-bold uppercase leading-none max-bp:text-3xl">
+              Virtues We Cherish
+            </h2>
+            <span className="pb-2.5 text-right font-mono text-sm uppercase tracking-widest max-bp:hidden [&_b]:text-ink-pink">
+              Who we&rsquo;re seeking
+              <br />
+              <b>— stamped in ink —</b>
+            </span>
+          </div>
+
+          <p className="max-w-[40ch] pb-9 pt-8 font-serif text-xl leading-snug max-bp:pb-6 max-bp:pt-5 max-bp:text-lg">
+            We&rsquo;re seeking founders who are:
+          </p>
+
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-5 max-bp:gap-x-3.5 max-bp:gap-y-3.5">
+            <span className="inline-block -rotate-2 border-[3px] border-current px-3.5 py-1.5 font-condensed text-2xl font-bold uppercase tracking-wide text-ink-pink transition-transform duration-150 ease-out hover:rotate-0 hover:scale-105 max-bp:text-base">
+              Loving, wholesome, earnest
+            </span>
+            <span className="inline-block rotate-1 border-[3px] border-current px-3.5 py-1.5 font-condensed text-2xl font-bold uppercase tracking-wide text-ink-blue transition-transform duration-150 ease-out hover:rotate-0 hover:scale-105 max-bp:text-base">
+              Humble, called to serve, takes out the trash
+            </span>
+            <span className="inline-block -rotate-1 border-[3px] border-current px-3.5 py-1.5 font-condensed text-2xl font-bold uppercase tracking-wide text-ink-dark transition-transform duration-150 ease-out hover:rotate-0 hover:scale-105 max-bp:text-base">
+              Caring, obsessive, dedicated to craft
+            </span>
+            <span className="inline-block rotate-2 border-[3px] border-current px-3.5 py-1.5 font-condensed text-2xl font-bold uppercase tracking-wide text-ink-blue transition-transform duration-150 ease-out hover:rotate-0 hover:scale-105 max-bp:text-base">
+              Fast, iterative, gets things done
+            </span>
+            <span className="inline-block rotate-[-3deg] border-[3px] border-current px-3.5 py-1.5 font-condensed text-2xl font-bold uppercase tracking-wide text-ink-pink transition-transform duration-150 ease-out hover:rotate-0 hover:scale-105 max-bp:text-base">
+              Idealistic, optimistic, dreamers
+            </span>
+            <span className="inline-block rotate-[1.5deg] border-[3px] border-current px-3.5 py-1.5 font-condensed text-2xl font-bold uppercase tracking-wide text-ink-dark transition-transform duration-150 ease-out hover:rotate-0 hover:scale-105 max-bp:text-base">
+              Scrappy, resourceful, practical
+            </span>
+            <span className="inline-block -rotate-1 border-[3px] border-current px-3.5 py-1.5 font-condensed text-2xl font-bold uppercase tracking-wide text-ink-blue transition-transform duration-150 ease-out hover:rotate-0 hover:scale-105 max-bp:text-base">
+              Open, honest, works in public
+            </span>
+            <span className="inline-block rotate-2 border-[3px] border-current px-3.5 py-1.5 font-condensed text-2xl font-bold uppercase tracking-wide text-ink-pink transition-transform duration-150 ease-out hover:rotate-0 hover:scale-105 max-bp:text-base">
+              Naughty, humorous, spirited
+            </span>
+            <span className="inline-block -rotate-2 border-[3px] border-current px-3.5 py-1.5 font-condensed text-2xl font-bold uppercase tracking-wide text-ink-dark transition-transform duration-150 ease-out hover:rotate-0 hover:scale-105 max-bp:text-base">
+              Honorable, trustworthy
+            </span>
+            <span className="inline-block rotate-1 border-[3px] border-current px-3.5 py-1.5 font-condensed text-2xl font-bold uppercase tracking-wide text-ink-pink transition-transform duration-150 ease-out hover:rotate-0 hover:scale-105 max-bp:text-base">
+              Bountiful, always project-ing
+            </span>
+            <span className="inline-block rotate-[-1.5deg] border-[3px] border-current px-3.5 py-1.5 font-condensed text-2xl font-bold uppercase tracking-wide text-ink-blue transition-transform duration-150 ease-out hover:rotate-0 hover:scale-105 max-bp:text-base">
+              Scope-sensitive, econ-brained
+            </span>
+            <span className="font-display text-4xl leading-none text-ink-pink misreg-blue max-bp:text-2xl">✦</span>
           </div>
         </div>
       </section>
@@ -527,12 +606,12 @@ export default function Home() {
       <section className="pb-20 pt-8">
         <div className="relative mx-auto max-w-[1320px] px-14 max-bp:px-5">
           <div className="grid grid-cols-[auto_1fr_auto] items-end gap-7 border-b-[3px] border-ink-dark pb-[18px] pt-18 max-bp:grid-cols-[auto_1fr] max-bp:gap-4 max-bp:pb-3.5 max-bp:pt-12">
-            <span className="font-display text-8xl leading-none text-ink-pink misreg-blue max-bp:text-6xl">04</span>
+            <span className="font-display text-8xl leading-none text-ink-pink misreg-blue max-bp:text-6xl">05</span>
             <h2 className="font-condensed text-6xl font-bold uppercase leading-none max-bp:text-3xl">
               Frequently Asked
             </h2>
             <span className="pb-2.5 text-right font-mono text-sm uppercase tracking-widest max-bp:hidden [&_b]:text-ink-pink">
-              Four questions
+              Six questions
               <br />
               answered <b>plainly</b>
             </span>
@@ -552,8 +631,8 @@ export default function Home() {
                     can be more certain that they produce value (see: gains from trade,{" "}
                     <a href="https://paulgraham.com/wealth.html">Paul Graham on wealth</a>,
                     &ldquo;surplus&rdquo;). They can tap into a much larger pool of available
-                    financing. They can compensate founders and early employees with financial
-                    upside, should the venture work out well.
+                    financing. They compensate founders and employees with high upside upon a
+                    successful exit, and thereby draw in better talent.
                   </p>
                   <p>
                     For-profit models are surprisingly flexible:{" "}
@@ -606,16 +685,17 @@ export default function Home() {
                   </p>
                   <p>
                     —&nbsp;You&rsquo;re well suited towards starting projects: you enjoy{" "}
-                    <em>independence</em>, have high risk tolerance, and moving fast.
+                    <em>independence</em>, ship fast, update quickly and are willing to fail.
                   </p>
                   <p>
-                    —&nbsp;You&rsquo;re worried about the balance of power, as labs accumulate more
-                    talent and funding.
+                    —&nbsp;You think that establishing new orgs is good for accountability and
+                    avoiding groupthink, as a counterweight to frontier labs accumulating talent
+                    and money.
                   </p>
                   <p>
-                    —&nbsp;You have an idea that you <b>can&rsquo;t stop thinking about</b>, a pain
-                    point you have to solve, something nobody else is doing that you think will
-                    have a big impact.
+                    —&nbsp;You have an idea that you <b>can&rsquo;t stop thinking about</b>,
+                    something you think will be great for the world, something that nobody else is
+                    doing (or worse: somebody is doing, but badly).
                   </p>
                 </div>
               </div>
@@ -631,12 +711,16 @@ export default function Home() {
                   <p>
                     Building great software takes <em>more than coding</em>.{" "}
                     <b>Product taste, visual design, distribution, sales and marketing</b> are all
-                    things that 2026 LLMs still fail at. (Not to mention long-term coherence and
-                    maintainability within a codebase.)
+                    things that 2026 LLMs still fail at. We&rsquo;ve developed these supplementary
+                    skills needed to ship successful products, and would love to foster them in a
+                    new generation of founders.
                   </p>
                   <p>
-                    We&rsquo;ve developed these supplementary skills needed to ship successful
-                    products, and would love to foster them in a new generation of founders.
+                    Beyond advice &amp; mentorship, Surplus also provides a{" "}
+                    <b>cohort of folks working on similar problems</b>, some of whom may be great
+                    cofounders. And finally, an incubator is a <em>container for focus</em>, a
+                    commitment device, a way to hold yourself accountable and get your idea out
+                    into the world.
                   </p>
                 </div>
               </div>
@@ -646,21 +730,48 @@ export default function Home() {
               <span className="font-display text-6xl leading-none text-ink-pink misreg-blue max-bp:text-5xl">Q4</span>
               <div>
                 <h3 className="mb-4 font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
-                  What kind of outcomes is Surplus hoping for?
+                  Do you accept non-software startups?
                 </h3>
-                <div className="columns-2 gap-8 font-serif text-lg leading-relaxed [column-rule:1.5px_solid_rgba(20,21,43,0.3)] [&_a:hover]:bg-ink-yellow [&_a:hover]:text-ink-dark [&_a:hover]:no-underline [&_a]:text-ink-blue [&_a]:underline [&_a]:underline-offset-2 [&_b]:bg-ink-yellow [&_b]:px-1 [&_b]:font-semibold [&_em]:italic [&_em]:text-ink-blue [&_p]:mb-[0.9em] max-bp:columns-1 max-bp:text-base">
+                <div className="font-serif text-lg leading-relaxed [&_a:hover]:bg-ink-yellow [&_a:hover]:text-ink-dark [&_a:hover]:no-underline [&_a]:text-ink-blue [&_a]:underline [&_a]:underline-offset-2 [&_b]:bg-ink-yellow [&_b]:px-1 [&_b]:font-semibold [&_em]:italic [&_em]:text-ink-blue [&_p]:mb-[0.9em] max-bp:text-base">
                   <p>
-                    First and foremost, we&rsquo;re hoping to incubate projects that produce{" "}
-                    <b>massive good for the world</b>.
+                    Maybe? We have the most experience on startups with a major software
+                    component, but have also built things like{" "}
+                    <a href="https://manifest.is/">Manifest</a> and Mox.{" "}
+                    <em>Apply if you wish!</em>
                   </p>
+                </div>
+              </div>
+            </article>
+
+            <article className="grid grid-cols-[90px_1fr] gap-7 border-b-[3px] border-ink-dark pb-[30px] pt-7 max-bp:grid-cols-1 max-bp:gap-2.5 max-bp:pb-6 max-bp:pt-[22px]">
+              <span className="font-display text-6xl leading-none text-ink-pink misreg-blue max-bp:text-5xl">Q5</span>
+              <div>
+                <h3 className="mb-4 font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
+                  Is Surplus open to students?
+                </h3>
+                <div className="font-serif text-lg leading-relaxed [&_a:hover]:bg-ink-yellow [&_a:hover]:text-ink-dark [&_a:hover]:no-underline [&_a]:text-ink-blue [&_a]:underline [&_a]:underline-offset-2 [&_b]:bg-ink-yellow [&_b]:px-1 [&_b]:font-semibold [&_em]:italic [&_em]:text-ink-blue [&_p]:mb-[0.9em] max-bp:text-base">
                   <p>
-                    Of course, we&rsquo;d be happy if our investments turn out profitable, helping
-                    us invest in more great projects.
+                    Yes! If accepted to Surplus, we do ask that students plan to take a leave of
+                    absence in the fall, or otherwise prepare so you can work on your startup{" "}
+                    <em>without distractions</em>.
                   </p>
+                </div>
+              </div>
+            </article>
+
+            <article className="grid grid-cols-[90px_1fr] gap-7 border-b-[3px] border-ink-dark pb-[30px] pt-7 max-bp:grid-cols-1 max-bp:gap-2.5 max-bp:pb-6 max-bp:pt-[22px]">
+              <span className="font-display text-6xl leading-none text-ink-pink misreg-blue max-bp:text-5xl">Q6</span>
+              <div>
+                <h3 className="mb-4 font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
+                  Can Surplus provide visas for international founders?
+                </h3>
+                <div className="font-serif text-lg leading-relaxed [&_a:hover]:bg-ink-yellow [&_a:hover]:text-ink-dark [&_a:hover]:no-underline [&_a]:text-ink-blue [&_a]:underline [&_a]:underline-offset-2 [&_b]:bg-ink-yellow [&_b]:px-1 [&_b]:font-semibold [&_em]:italic [&_em]:text-ink-blue [&_p]:mb-[0.9em] max-bp:text-base">
                   <p>
-                    Finally, Manifund, Mox, and many others would be excited to hire
-                    founder-shaped folks; even if your specific project doesn&rsquo;t succeed, your
-                    time at Surplus will be a <em>fantastic work test.</em>
+                    Yes! We can support accepted founders on a J-1 visa, through Mox. See{" "}
+                    <a href="https://www.notion.so/Researchers-and-Founders-Join-Mox-s-J-1-Global-Expert-Fellowship-30d54492ea7a80bc9c5ce70ccfceae07?pvs=21">
+                      Mox&rsquo;s J-1 Global Expert Fellowship
+                    </a>
+                    .
                   </p>
                 </div>
               </div>
@@ -687,7 +798,8 @@ export default function Home() {
           </h2>
           <div className="mt-[30px] grid grid-cols-[1fr_auto] items-end gap-10 border-t-[3px] border-paper pt-[30px] max-bp:grid-cols-1 max-bp:gap-6">
             <p className="max-w-[40ch] font-serif text-xl leading-snug max-bp:text-lg">
-
+              Seed funding, advice, peers, intros, and space to focus — 3 months, starting late
+              July in SF. Decisions by July 1.
             </p>
             <a
               className="inline-flex items-center gap-3.5 border-[3px] border-paper bg-ink-pink px-[30px] py-[22px] font-condensed text-3xl font-bold uppercase tracking-wide text-paper no-underline shadow-[8px_8px_0_var(--color-ink-blue)] transition-[transform,box-shadow] duration-200 ease-out hover:-translate-x-[3px] hover:-translate-y-[3px] hover:shadow-[11px_11px_0_var(--color-ink-blue)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-[3px_3px_0_var(--color-ink-blue)] max-bp:px-[22px] max-bp:py-4 max-bp:text-xl"
@@ -711,9 +823,9 @@ export default function Home() {
               Organized by <b className="text-ink-yellow">Manifund</b> &amp; <b className="text-ink-yellow">Mox</b>
             </span>
             <span>
-              Printed in <span className="text-ink-pink">three&nbsp;inks</span> on Berkeley paper
+              Printed in <span className="text-ink-pink">three&nbsp;inks</span> on San Francisco paper
             </span>
-            <span>Demo Day · Sep&nbsp;18</span>
+            <span>Demo Day · Oct&nbsp;16</span>
           </div>
         </div>
       </footer>
