@@ -13,7 +13,7 @@ export default function Home() {
       </header> */}
 
       {/* =================== HERO =================== */}
-      <section className="relative overflow-visible pb-14 pt-16 max-bp:pb-10 max-bp:pt-9">
+      <section className="relative overflow-visible pb-14 pt-9 max-bp:pb-10 max-bp:pt-9">
         <div className="relative mx-auto max-w-[1320px] px-14 max-bp:px-5">
           <div
             className="pointer-events-none absolute right-[-160px] top-[110px] z-0 h-80 w-80 opacity-85 max-bp:hidden"
@@ -58,15 +58,119 @@ export default function Home() {
             <span className="max-bp:hidden"></span>
           </div>
 
-          <div className="relative z-[1] mt-11 grid grid-cols-[1.35fr_1fr] items-start gap-10 max-bp:mt-7 max-bp:grid-cols-1 max-bp:gap-7">
+          <div className="relative z-[1] mt-6 grid grid-cols-[1.35fr_1fr] items-start gap-10 max-bp:mt-7 max-bp:grid-cols-1 max-bp:gap-7">
             <div>
-              <p className="max-w-[18ch] font-serif text-3xl font-medium leading-[1.22] text-ink-dark [&_em]:italic [&_em]:text-ink-blue [&_mark]:bg-ink-yellow [&_mark]:px-1 [&_mark]:text-ink-dark max-bp:max-w-none max-bp:text-2xl">
-                &ldquo;<em>Surplus</em>&rdquo; is the value created through{" "}
-                <mark>positive-sum trades</mark>; what markets produce in abundance.
-                <span className="misreg-blue mt-3.5 block font-display text-6xl leading-none text-ink-pink max-bp:text-4xl">
-                  Build it here.
-                </span>
+              <p className="max-w-[34ch] font-serif text-2xl font-medium leading-[1.22] text-ink-dark [&_em]:italic [&_em]:text-ink-blue [&_mark]:bg-ink-yellow [&_mark]:px-1 [&_mark]:text-ink-dark max-bp:max-w-none">
+                &ldquo;<em>Surplus</em>&rdquo; is the value created <br />through{" "}
+                <mark>positive-sum trades</mark>;<br /> what markets produce in abundance.
               </p>
+              <figure className="m-0 mt-4 max-w-[420px] max-bp:max-w-[380px]">
+                <svg
+                  viewBox="0 0 640 560"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Supply and demand graph with consumer and producer surplus shaded in two inks"
+                  className="block h-auto w-full"
+                >
+                  <defs>
+                    <pattern id="surplus-dots-blue" width="9" height="9" patternUnits="userSpaceOnUse">
+                      <circle cx="4.5" cy="4.5" r="2.1" fill="var(--color-ink-blue)" />
+                    </pattern>
+                    <pattern id="surplus-dots-pink" width="9" height="9" patternUnits="userSpaceOnUse">
+                      <circle cx="4.5" cy="4.5" r="2.4" fill="var(--color-ink-pink)" />
+                    </pattern>
+                  </defs>
+
+                  {/* surplus plates, nudged off-register */}
+                  <g className="mix-blend-multiply" opacity="0.8">
+                    <path d="M100,100 L330,280 L100,280 Z" fill="url(#surplus-dots-blue)" transform="translate(-4,-3)" />
+                    <path d="M100,460 L330,280 L100,280 Z" fill="url(#surplus-dots-pink)" transform="translate(4,3)" />
+                  </g>
+
+                  {/* equilibrium dotted lines */}
+                  <g stroke="var(--color-ink-dark)" strokeWidth="2.5" strokeLinecap="round" fill="none" opacity="0.8">
+                    <line x1="80" y1="280" x2="330" y2="280" strokeDasharray="1 9" />
+                    <line x1="330" y1="280" x2="330" y2="480" strokeDasharray="1 9" />
+                  </g>
+
+                  {/* curves */}
+                  <g strokeLinecap="round" fill="none" className="mix-blend-multiply">
+                    <line x1="100" y1="100" x2="560" y2="460" stroke="var(--color-ink-blue)" strokeWidth="7" />
+                    <line x1="100" y1="460" x2="560" y2="100" stroke="var(--color-ink-pink)" strokeWidth="7" />
+                  </g>
+
+                  {/* axes */}
+                  <g>
+                    <line x1="80" y1="480" x2="80" y2="55" stroke="var(--color-ink-dark)" strokeWidth="4" />
+                    <line x1="80" y1="480" x2="585" y2="480" stroke="var(--color-ink-dark)" strokeWidth="4" />
+                    <path d="M80,43 L73,57 L87,57 Z" fill="var(--color-ink-dark)" />
+                    <path d="M597,480 L583,473 L583,487 Z" fill="var(--color-ink-dark)" />
+                    <text
+                      x="58"
+                      y="59"
+                      transform="rotate(-90 58 59)"
+                      textAnchor="end"
+                      fontFamily="var(--font-condensed)"
+                      fontWeight="700"
+                      fontSize="21"
+                      letterSpacing="3"
+                      fill="var(--color-ink-dark)"
+                    >
+                      PRICE
+                    </text>
+                    <text
+                      x="585"
+                      y="514"
+                      textAnchor="end"
+                      fontFamily="var(--font-condensed)"
+                      fontWeight="700"
+                      fontSize="21"
+                      letterSpacing="3"
+                      fill="var(--color-ink-dark)"
+                    >
+                      QUANTITY
+                    </text>
+                  </g>
+
+                  {/* equilibrium ticks */}
+                  <g fontFamily="var(--font-mono)" fontWeight="400" fontSize="15" fill="var(--color-ink-dark)" opacity="0.72">
+                    <text x="68" y="285" textAnchor="end">
+                      P*
+                    </text>
+                    <text x="330" y="504" textAnchor="middle">
+                      Q*
+                    </text>
+                  </g>
+
+                  {/* curve labels */}
+                  <text
+                    x="472"
+                    y="148"
+                    transform="rotate(-38 472 148)"
+                    textAnchor="middle"
+                    fontFamily="var(--font-condensed)"
+                    fontWeight="700"
+                    fontSize="23"
+                    letterSpacing="2.5"
+                    fill="var(--color-ink-pink)"
+                  >
+                    SUPPLY
+                  </text>
+                  <text
+                    x="472"
+                    y="434"
+                    transform="rotate(38 472 434)"
+                    textAnchor="middle"
+                    fontFamily="var(--font-condensed)"
+                    fontWeight="700"
+                    fontSize="23"
+                    letterSpacing="2.5"
+                    fill="var(--color-ink-blue)"
+                  >
+                    DEMAND
+                  </text>
+                </svg>
+              </figure>
             </div>
 
             <aside className="relative flex flex-col items-stretch gap-5">
