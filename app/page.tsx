@@ -683,12 +683,11 @@ export default function Home() {
           <h2 className="font-display text-[clamp(64px,8.5vw,128px)] leading-[0.82] tracking-[-0.04em]">
             <span className="text-ink-yellow">CODE</span> FOR MASSIVE
             <br />
-            <span className="text-ink-pink">PUBLIC GOOD.</span>
+            <span className="text-ink-pink">PUBLIC GOOD</span>
           </h2>
           <div className="mt-[30px] grid grid-cols-[1fr_auto] items-end gap-10 border-t-[3px] border-paper pt-[30px] max-bp:grid-cols-1 max-bp:gap-6">
             <p className="max-w-[40ch] font-serif text-xl leading-snug max-bp:text-lg">
-              Build the thing you can&rsquo;t stop thinking about. We&rsquo;ll give you the capital,
-              the cohort, the kitchen, and ninety days of company.
+
             </p>
             <a
               className="inline-flex items-center gap-3.5 border-[3px] border-paper bg-ink-pink px-[30px] py-[22px] font-condensed text-3xl font-bold uppercase tracking-wide text-paper no-underline shadow-[8px_8px_0_var(--color-ink-blue)] transition-[transform,box-shadow] duration-200 ease-out hover:-translate-x-[3px] hover:-translate-y-[3px] hover:shadow-[11px_11px_0_var(--color-ink-blue)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-[3px_3px_0_var(--color-ink-blue)] max-bp:px-[22px] max-bp:py-4 max-bp:text-xl"
@@ -707,7 +706,7 @@ export default function Home() {
       <footer className="bg-ink-dark pb-7 pt-5 font-mono text-[13px] uppercase tracking-[0.14em] text-paper">
         <div className="relative mx-auto max-w-[1320px] px-14 max-bp:px-5">
           <div className="flex flex-wrap items-center justify-between gap-6 border-t-[1.5px] border-dotted border-paper/40 pt-4 max-bp:flex-col max-bp:items-start max-bp:gap-2">
-            <span className="font-display text-lg tracking-[0.06em] text-paper">SURPLUS — MMXXV</span>
+            <span className="font-display text-lg tracking-[0.06em] text-paper">SURPLUS - 2026</span>
             <span>
               Organized by <b className="text-ink-yellow">Manifund</b> &amp; <b className="text-ink-yellow">Mox</b>
             </span>
