@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <>
       {/* =================== MASTHEAD =================== */}
-      <header>
+      {/* <header>
         <div className="flex flex-wrap items-center justify-between gap-5 bg-ink-dark px-6 py-1.5 font-mono text-sm uppercase tracking-widest text-paper max-bp:flex-nowrap max-bp:justify-center max-bp:gap-2.5 max-bp:px-4 max-bp:py-2.5">
           <span>☞&nbsp;&nbsp;Cohort begins July 20</span>
           <span className="max-bp:hidden">
@@ -10,7 +10,7 @@ export default function Home() {
           </span>
           <span className="max-bp:hidden">$100K + SAFE · 12 weeks · Berkeley</span>
         </div>
-      </header>
+      </header> */}
 
       {/* =================== HERO =================== */}
       <section className="relative overflow-visible pb-14 pt-16 max-bp:pb-10 max-bp:pt-9">
@@ -19,8 +19,18 @@ export default function Home() {
             className="pointer-events-none absolute right-[-160px] top-[110px] z-0 h-80 w-80 opacity-85 max-bp:hidden"
             aria-hidden="true"
           >
-            <div className="absolute inset-0 rounded-full border-[14px] border-ink-blue opacity-95 mix-blend-multiply"></div>
-            <div className="halftone absolute inset-9 rounded-full opacity-65 mix-blend-multiply"></div>
+            <svg
+              className="absolute -inset-0 h-full w-full text-ink-dark opacity-95 mix-blend-multiply"
+              viewBox="0 0 320 320"
+            >
+              <path
+                d="M106 7 H214 V106 H313 V214 H214 V313 H106 V214 H7 V106 H106 Z"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="12"
+              />
+            </svg>
+            <div className="halftone absolute inset-6 opacity-65 mix-blend-multiply [clip-path:polygon(33%_0,67%_0,67%_33%,100%_33%,100%_67%,67%_67%,67%_100%,33%_100%,33%_67%,0_67%,0_33%,33%_33%)]"></div>
           </div>
 
           <div className="mb-[18px] flex flex-wrap items-center gap-3 max-bp:gap-2">
@@ -41,9 +51,9 @@ export default function Home() {
           </h1>
 
           <div className="mt-1 flex items-baseline justify-between border-t-[3px] border-ink-dark pt-2.5 font-mono text-sm uppercase tracking-widest max-bp:flex-col max-bp:items-start max-bp:gap-1.5">
-            <span>☞&nbsp;&nbsp;An incubator for software startups</span>
+            <span>☞&nbsp;&nbsp;Organized by Manifund &amp; Mox</span>
             <span>3 months · starting late July</span>
-            <span>Organized by Manifund &amp; Lightcone</span>
+            <span>San Francisco</span>
             <span className="max-bp:hidden"></span>
             <span className="max-bp:hidden"></span>
           </div>
@@ -80,17 +90,6 @@ export default function Home() {
                     </span>
                     <span className="font-mono text-[13px] uppercase leading-[1.15] tracking-widest text-ink-blue">
                       Jul 20 → Sep 18
-                    </span>
-                  </span>
-                </div>
-                <div className="grid grid-cols-[110px_1fr] items-center gap-3.5 border-b-[1.5px] border-ink-dark p-3.5 last:border-b-0">
-                  <span className="font-display text-[26px] leading-none text-ink-pink">2</span>
-                  <span className="flex min-w-0 flex-col gap-1">
-                    <span className="font-condensed text-[13px] font-bold uppercase leading-[1.15] tracking-wide">
-                      Venues — Mox &amp; Lighthaven
-                    </span>
-                    <span className="font-mono text-[13px] uppercase leading-[1.15] tracking-widest text-ink-blue">
-                      Berkeley
                     </span>
                   </span>
                 </div>
@@ -149,7 +148,7 @@ export default function Home() {
             <div className="min-w-0 break-words text-base leading-relaxed [&_b]:bg-ink-yellow [&_b]:px-1 [&_b]:font-semibold [&_em]:italic [&_em]:text-ink-blue [&_p]:mb-[1.4em]">
               <p className="first-letter:float-left first-letter:pr-2.5 first-letter:pt-1.5 first-letter:font-display first-letter:text-[82px] first-letter:leading-[0.85] first-letter:text-ink-pink max-bp:first-letter:text-6xl">
                 Surplus is an incubator for software startups, organized by <em>Manifund</em> and{" "}
-                <em>Lightcone</em>. We are looking for founders building tools for{" "}
+                <em>Mox</em>. We are looking for founders building tools for{" "}
                 <b>public good</b> in the age of transformative AI — people who would rather start
                 something than join something, who have an idea they can&rsquo;t stop thinking
                 about, who move fast and ship taste.
@@ -171,7 +170,7 @@ export default function Home() {
 
             <div className="text-right font-mono text-sm uppercase leading-normal tracking-widest max-bp:text-left">
               <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;Run by</span>
-              <span className="mt-1 block opacity-85">Manifund &amp; Lightcone Infrastructure.</span>
+              <span className="mt-1 block opacity-85">Manifund &amp; Mox.</span>
               <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;Office hours</span>
               <span className="mt-1 block opacity-85">Weekly, with Austin Chen &amp; Oliver Habryka.</span>
               <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;Speakers</span>
@@ -659,7 +658,7 @@ export default function Home() {
                     us invest in more great projects.
                   </p>
                   <p>
-                    Finally, Manifund, Lightcone, and many others would be excited to hire
+                    Finally, Manifund, Mox, and many others would be excited to hire
                     founder-shaped folks; even if your specific project doesn&rsquo;t succeed, your
                     time at Surplus will be a <em>fantastic work test.</em>
                   </p>
@@ -710,7 +709,7 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-between gap-6 border-t-[1.5px] border-dotted border-paper/40 pt-4 max-bp:flex-col max-bp:items-start max-bp:gap-2">
             <span className="font-display text-lg tracking-[0.06em] text-paper">SURPLUS — MMXXV</span>
             <span>
-              Organized by <b className="text-ink-yellow">Manifund</b> &amp; <b className="text-ink-yellow">Lightcone</b>
+              Organized by <b className="text-ink-yellow">Manifund</b> &amp; <b className="text-ink-yellow">Mox</b>
             </span>
             <span>
               Printed in <span className="text-ink-pink">three&nbsp;inks</span> on Berkeley paper
