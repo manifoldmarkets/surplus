@@ -198,7 +198,7 @@ export default function Home() {
                   </span>
                 </div>
                 <div className="grid grid-cols-[110px_1fr] items-center gap-3.5 border-b-[1.5px] border-ink-dark p-3.5 last:border-b-0">
-                  <span className="font-display text-[26px] leading-none text-ink-pink">~12</span>
+                  <span className="font-display text-[26px] leading-none text-ink-pink">~10</span>
                   <span className="flex min-w-0 flex-col gap-1">
                     <span className="font-condensed text-[13px] font-bold uppercase leading-[1.15] tracking-wide">
                       Founders in the cohort
@@ -247,7 +247,9 @@ export default function Home() {
               <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;Where</span>
               <span className="mt-1 block opacity-85">Office space at Mox, San Francisco.</span>
               <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;When</span>
-              <span className="mt-1 block opacity-85">3 months, starting late July.</span>
+              <span className="mt-1 block opacity-85">12 weeks, starting late July.</span>
+              <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;Cohort</span>
+              <span className="mt-1 block opacity-85">~10 founders.</span>
             </div>
 
             <div className="min-w-0 break-words text-base leading-relaxed [&_b]:bg-ink-yellow [&_b]:px-1 [&_b]:font-semibold [&_em]:italic [&_em]:text-ink-blue [&_p]:mb-[1.4em]">
@@ -904,12 +906,12 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-between gap-6 border-t-[1.5px] border-dotted border-paper/40 pt-4 max-bp:flex-col max-bp:items-start max-bp:gap-2">
             <span className="font-display text-lg tracking-[0.06em] text-paper">SURPLUS - 2026</span>
             <span>
-              Organized by <b className="text-ink-yellow">Manifund</b> &amp; <b className="text-ink-yellow">Mox</b>
+              Organized by Austin of <b className="text-ink-yellow">Manifund</b> &amp; <b className="text-ink-yellow">Mox</b>
             </span>
             <span>
-              Printed in <span className="text-ink-pink">three&nbsp;inks</span> on San Francisco paper
+              Designed in San Francisco
             </span>
-            <span>Demo Day · Oct&nbsp;16</span>
+            <span>With <span className="text-ink-pink">love </span>for all</span>
           </div>
         </div>
       </footer>
