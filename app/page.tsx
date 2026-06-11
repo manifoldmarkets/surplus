@@ -293,16 +293,11 @@ export default function Home() {
       {/* =================== PROJECTS =================== */}
       <section className="pb-10 pt-7">
         <div className="relative mx-auto max-w-[1320px] px-14 max-bp:px-5">
-          <div className="grid grid-cols-[auto_1fr_auto] items-end gap-7 border-b-[3px] border-ink-dark pb-[18px] pt-18 max-bp:grid-cols-[auto_1fr] max-bp:gap-4 max-bp:pb-3.5 max-bp:pt-12">
+          <div className="grid grid-cols-[auto_1fr] items-end gap-7 border-b-[3px] border-ink-dark pb-[18px] pt-18 max-bp:gap-4 max-bp:pb-3.5 max-bp:pt-12">
             <span className="font-display text-8xl leading-none text-ink-pink misreg-blue max-bp:text-6xl">01</span>
             <h2 className="font-condensed text-6xl font-bold uppercase leading-none max-bp:text-3xl">
               Projects We&rsquo;re Excited For
             </h2>
-            <span className="pb-2.5 text-right font-mono text-sm uppercase tracking-widest max-bp:hidden [&_b]:text-ink-pink">
-              Three categories
-              <br />
-              <b>— not exhaustive —</b>
-            </span>
           </div>
 
           <div className="grid grid-cols-[1.4fr_1fr] items-start gap-10 pb-12 pt-9 max-bp:grid-cols-1 max-bp:gap-4 max-bp:pb-7 max-bp:pt-6">
@@ -472,16 +467,11 @@ export default function Home() {
       {/* =================== OFFERS =================== */}
       <section className="pb-14 pt-9">
         <div className="relative mx-auto max-w-[1320px] px-14 max-bp:px-5">
-          <div className="grid grid-cols-[auto_1fr_auto] items-end gap-7 border-b-[3px] border-ink-dark pb-[18px] pt-18 max-bp:grid-cols-[auto_1fr] max-bp:gap-4 max-bp:pb-3.5 max-bp:pt-12">
+          <div className="grid grid-cols-[auto_1fr] items-end gap-7 border-b-[3px] border-ink-dark pb-[18px] pt-18 max-bp:gap-4 max-bp:pb-3.5 max-bp:pt-12">
             <span className="font-display text-8xl leading-none text-ink-pink misreg-blue max-bp:text-6xl">02</span>
             <h2 className="font-condensed text-6xl font-bold uppercase leading-none max-bp:text-3xl">
               What We Offer
             </h2>
-            <span className="pb-2.5 text-right font-mono text-sm uppercase tracking-widest max-bp:hidden [&_b]:text-ink-pink">
-              The deal,
-              <br />
-              <b>— in six parts —</b>
-            </span>
           </div>
 
           <div className="grid grid-cols-3 gap-4 pt-8 max-bp:grid-cols-1">
@@ -554,14 +544,9 @@ export default function Home() {
       {/* =================== TIMELINE =================== */}
       <section className="pb-12 pt-8">
         <div className="relative mx-auto max-w-[1320px] px-14 max-bp:px-5">
-          <div className="grid grid-cols-[auto_1fr_auto] items-end gap-7 border-b-[3px] border-ink-dark pb-[18px] pt-18 max-bp:grid-cols-[auto_1fr] max-bp:gap-4 max-bp:pb-3.5 max-bp:pt-12">
+          <div className="grid grid-cols-[auto_1fr] items-end gap-7 border-b-[3px] border-ink-dark pb-[18px] pt-18 max-bp:gap-4 max-bp:pb-3.5 max-bp:pt-12">
             <span className="font-display text-8xl leading-none text-ink-pink misreg-blue max-bp:text-6xl">03</span>
             <h2 className="font-condensed text-6xl font-bold uppercase leading-none max-bp:text-3xl">Timeline</h2>
-            <span className="pb-2.5 text-right font-mono text-sm uppercase tracking-widest max-bp:hidden [&_b]:text-ink-pink">
-              June → October <b>2026</b>
-              <br />
-              Mark your calendar
-            </span>
           </div>
 
           <div className="mt-8 border-t-[3px] border-ink-dark">
@@ -651,16 +636,11 @@ export default function Home() {
           className="pointer-events-none absolute -bottom-[110px] -left-[90px] h-[280px] w-[280px] rounded-full bg-ink-yellow opacity-35 mix-blend-multiply"
         ></span>
         <div className="relative z-[1] mx-auto max-w-[1320px] px-14 max-bp:px-5">
-          <div className="grid grid-cols-[auto_1fr_auto] items-end gap-7 border-b-[3px] border-ink-dark pb-[18px] pt-12 max-bp:grid-cols-[auto_1fr] max-bp:gap-4 max-bp:pb-3.5 max-bp:pt-8">
+          <div className="grid grid-cols-[auto_1fr] items-end gap-7 border-b-[3px] border-ink-dark pb-[18px] pt-12 max-bp:gap-4 max-bp:pb-3.5 max-bp:pt-8">
             <span className="font-display text-8xl leading-none text-ink-blue misreg-pink max-bp:text-6xl">04</span>
             <h2 className="font-condensed text-6xl font-bold uppercase leading-none max-bp:text-3xl">
               Virtues We Cherish
             </h2>
-            <span className="pb-2.5 text-right font-mono text-sm uppercase tracking-widest max-bp:hidden [&_b]:text-ink-pink">
-              Who we&rsquo;re seeking
-              <br />
-              <b>— stamped in ink —</b>
-            </span>
           </div>
 
           <p className="max-w-[40ch] pb-9 pt-8 font-serif text-xl leading-snug max-bp:pb-6 max-bp:pt-5 max-bp:text-lg">
@@ -709,16 +689,11 @@ export default function Home() {
       {/* =================== FAQ =================== */}
       <section className="pb-20 pt-8">
         <div className="relative mx-auto max-w-[1320px] px-14 max-bp:px-5">
-          <div className="grid grid-cols-[auto_1fr_auto] items-end gap-7 border-b-[3px] border-ink-dark pb-[18px] pt-18 max-bp:grid-cols-[auto_1fr] max-bp:gap-4 max-bp:pb-3.5 max-bp:pt-12">
+          <div className="grid grid-cols-[auto_1fr] items-end gap-7 border-b-[3px] border-ink-dark pb-[18px] pt-18 max-bp:gap-4 max-bp:pb-3.5 max-bp:pt-12">
             <span className="font-display text-8xl leading-none text-ink-pink misreg-blue max-bp:text-6xl">05</span>
             <h2 className="font-condensed text-6xl font-bold uppercase leading-none max-bp:text-3xl">
               Frequently Asked
             </h2>
-            <span className="pb-2.5 text-right font-mono text-sm uppercase tracking-widest max-bp:hidden [&_b]:text-ink-pink">
-              Six questions
-              <br />
-              answered <b>plainly</b>
-            </span>
           </div>
 
           <div className="mt-9 border-t-8 border-ink-dark">
