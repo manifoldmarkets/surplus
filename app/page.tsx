@@ -303,7 +303,7 @@ export default function Home() {
           <div className="grid grid-cols-[1.4fr_1fr] items-start gap-10 pb-12 pt-9 max-bp:grid-cols-1 max-bp:gap-4 max-bp:pb-7 max-bp:pt-6">
             <p className="font-serif text-xl leading-snug [&_b]:bg-ink-yellow [&_b]:px-1 [&_b]:font-semibold [&_em]:italic [&_em]:text-ink-blue max-bp:text-lg">
               We&rsquo;re open to many proposals, but here are <b>three categories</b> of projects
-              we&rsquo;re particularly well-suited to incubate. If your idea is adjacent —{" "}
+              we&rsquo;re well-suited to incubate. If your idea is adjacent —{" "}
               <em>apply anyway</em>.
             </p>
             <div className="self-end text-right font-display text-6xl leading-none text-ink-blue misreg-pink max-bp:self-start max-bp:text-left max-bp:text-4xl">
@@ -637,7 +637,7 @@ export default function Home() {
         ></span>
         <div className="relative z-[1] mx-auto max-w-[1320px] px-14 max-bp:px-5">
           <div className="grid grid-cols-[auto_1fr] items-end gap-7 border-b-[3px] border-ink-dark pb-[18px] pt-12 max-bp:gap-4 max-bp:pb-3.5 max-bp:pt-8">
-            <span className="font-display text-8xl leading-none text-ink-blue misreg-pink max-bp:text-6xl">04</span>
+            <span className="font-display text-8xl leading-none text-ink-pink misreg-blue max-bp:text-6xl">04</span>
             <h2 className="font-condensed text-6xl font-bold uppercase leading-none max-bp:text-3xl">
               Virtues We Cherish
             </h2>
@@ -698,7 +698,7 @@ export default function Home() {
 
           <div className="mt-9 border-t-8 border-ink-dark">
             <article className="grid grid-cols-[90px_1fr] gap-7 border-b-[3px] border-ink-dark pb-[30px] pt-7 max-bp:grid-cols-1 max-bp:gap-2.5 max-bp:pb-6 max-bp:pt-[22px]">
-              <span className="font-display text-6xl leading-none text-ink-pink misreg-blue max-bp:text-5xl">Q1</span>
+              <span className="font-display text-6xl leading-none text-ink-blue misreg-pink max-bp:text-5xl">Q1</span>
               <div>
                 <h3 className="mb-4 font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
                   Why does Surplus encourage for-profit corps?
@@ -752,7 +752,7 @@ export default function Home() {
             </article>
 
             <article className="grid grid-cols-[90px_1fr] gap-7 border-b-[3px] border-ink-dark pb-[30px] pt-7 max-bp:grid-cols-1 max-bp:gap-2.5 max-bp:pb-6 max-bp:pt-[22px]">
-              <span className="font-display text-6xl leading-none text-ink-pink misreg-blue max-bp:text-5xl">Q2</span>
+              <span className="font-display text-6xl leading-none text-ink-blue misreg-pink max-bp:text-5xl">Q2</span>
               <div>
                 <h3 className="mb-4 font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
                   Why start a startup, rather than join a lab or an AI safety org?
@@ -781,7 +781,7 @@ export default function Home() {
             </article>
 
             <article className="grid grid-cols-[90px_1fr] gap-7 border-b-[3px] border-ink-dark pb-[30px] pt-7 max-bp:grid-cols-1 max-bp:gap-2.5 max-bp:pb-6 max-bp:pt-[22px]">
-              <span className="font-display text-6xl leading-none text-ink-pink misreg-blue max-bp:text-5xl">Q3</span>
+              <span className="font-display text-6xl leading-none text-ink-blue misreg-pink max-bp:text-5xl">Q3</span>
               <div>
                 <h3 className="mb-4 font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
                   Why should I join an incubator, when vibecoding is so easy?
@@ -806,7 +806,7 @@ export default function Home() {
             </article>
 
             <article className="grid grid-cols-[90px_1fr] gap-7 border-b-[3px] border-ink-dark pb-[30px] pt-7 max-bp:grid-cols-1 max-bp:gap-2.5 max-bp:pb-6 max-bp:pt-[22px]">
-              <span className="font-display text-6xl leading-none text-ink-pink misreg-blue max-bp:text-5xl">Q4</span>
+              <span className="font-display text-6xl leading-none text-ink-blue misreg-pink max-bp:text-5xl">Q4</span>
               <div>
                 <h3 className="mb-4 font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
                   Do you accept non-software startups?
@@ -823,7 +823,7 @@ export default function Home() {
             </article>
 
             <article className="grid grid-cols-[90px_1fr] gap-7 border-b-[3px] border-ink-dark pb-[30px] pt-7 max-bp:grid-cols-1 max-bp:gap-2.5 max-bp:pb-6 max-bp:pt-[22px]">
-              <span className="font-display text-6xl leading-none text-ink-pink misreg-blue max-bp:text-5xl">Q5</span>
+              <span className="font-display text-6xl leading-none text-ink-blue misreg-pink max-bp:text-5xl">Q5</span>
               <div>
                 <h3 className="mb-4 font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
                   Is Surplus open to students?
@@ -839,7 +839,7 @@ export default function Home() {
             </article>
 
             <article className="grid grid-cols-[90px_1fr] gap-7 border-b-[3px] border-ink-dark pb-[30px] pt-7 max-bp:grid-cols-1 max-bp:gap-2.5 max-bp:pb-6 max-bp:pt-[22px]">
-              <span className="font-display text-6xl leading-none text-ink-pink misreg-blue max-bp:text-5xl">Q6</span>
+              <span className="font-display text-6xl leading-none text-ink-blue misreg-pink max-bp:text-5xl">Q6</span>
               <div>
                 <h3 className="mb-4 font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
                   Can Surplus provide visas for international founders?
@@ -878,7 +878,7 @@ export default function Home() {
           <div className="mt-[30px] grid grid-cols-[1fr_auto] items-end gap-10 border-t-[3px] border-paper pt-[30px] max-bp:grid-cols-1 max-bp:gap-6">
             <p className="max-w-[40ch] font-serif text-xl leading-snug max-bp:text-lg">
               Seed funding, advice, peers, intros, and space to focus — 3 months, starting late
-              July in SF. Decisions by July 1.
+              July in SF.
             </p>
             <a
               className="inline-flex items-center gap-3.5 border-[3px] border-paper bg-ink-pink px-[30px] py-[22px] font-condensed text-3xl font-bold uppercase tracking-wide text-paper no-underline shadow-[8px_8px_0_var(--color-ink-blue)] transition-[transform,box-shadow] duration-200 ease-out hover:-translate-x-[3px] hover:-translate-y-[3px] hover:shadow-[11px_11px_0_var(--color-ink-blue)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-[3px_3px_0_var(--color-ink-blue)] max-bp:px-[22px] max-bp:py-4 max-bp:text-xl"
@@ -887,7 +887,12 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               <span className="font-display text-3xl">☞</span>
-              Apply by June 24
+              <span>
+                Apply by June 24
+                <span className="block font-mono text-sm font-normal normal-case tracking-widest opacity-80">
+                  Decisions by July 1
+                </span>
+              </span>
             </a>
           </div>
         </div>
