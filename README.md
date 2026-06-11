@@ -1,105 +1,121 @@
-# About Surplus
+An incubator for software startups, to create massive public good in the age of transformative AI. It's a 3 month program, starting late July in SF. We provide seed funding, advice, peers, intros, and space to focus.
 
-An incubator for software startups, to create massive public good in the age of transformative AI. It's a 3 month program, starting late July in SF. We provide seed funding, advice, peers, intros, and space to focus.
+## Projects we’re excited for
 
-*Expression of interest here: https://manifund.org/surplus*
+We’re open to many proposals, but here are three categories of projects we’re particularly well-suited to incubate:
 
-(last updated 2026-05-29)
+### 1. AI for epistemics and coordination
 
-## Projects we’re excited for
+LLM-powered tools that help people think better, work together, and build common knowledge.
 
-We’re open to many proposals, but here are three categories of projects we’re particularly well-suited to incubate:
+Examples include:
 
-### 1. AI for epistemics and coordination
+*   Guardian angels/”Digital Twins”, as [described by Gwern](https://gwern.net/guardian-angel)
+*   Fact-checking like [Community Notes](https://communitynotes.x.com/guide/en/about/introduction) or [Pangram](https://www.pangram.com/)
+*   Knowledge bases like [Grokipedia](https://grokipedia.com/) or [Longterm Wiki](https://www.longtermwiki.com/)
+*   High-quality research reports like [Elicit](https://elicit.com/) or Deep Research
+*   AI for forecasting like [Mantic](https://www.mantic.com/) or [Futuresearch](https://futuresearch.ai/)
+*   AI simulation of human preferences, like [Simile](https://simile.ai/) or [Aaru](https://aaru.com/)
+*   AI for dispute resolution (eg prediction market criteria; legal courts)
+*   AI for democratic resilience & resisting authoritarianism
 
-LLM-powered tools that help people think better, work together, and build common knowledge.
+### 2. Public-facing websites
 
-Examples include:
+Many concepts in AI safety could be translated for a wider audience, with thoughtful design and an eye for virality.
 
-- Fact-checking like [Community Notes](https://communitynotes.x.com/guide/en/about/introduction) or [Pangram](https://www.pangram.com/)
-- Knowledge bases like [Grokipedia](https://grokipedia.com/) or [Longterm Wiki](https://www.longtermwiki.com/)
-- High-quality research reports like [Elicit](https://elicit.com/) or Deep Research
-- AI for forecasting like [Mantic](https://www.mantic.com/) or [Futuresearch](https://futuresearch.ai/)
-- AI simulation of human preferences, like [Simile](https://simile.ai/) or [Aaru](https://aaru.com/)
-- AI for dispute resolution (eg community investigations; prediction markets criteria)
-- AI for democratic resilience, resisting authoritarianism
+Examples include:
 
-### 2. Public-facing websites
+*   Microsites like [AI 2027](https://ai-2027.com/), showcasing concepts through narrative & interactive design
+*   Visualizations like [Epoch](https://epoch.ai/) and [Our World in Data](https://ourworldindata.org/)
+*   Transparency for inside what’s happening inside labs, and across the AI supply chain
+*   Courses like [Bluedot](https://bluedot.org/), helping people upskill into relevant domains
+*   Games like [Universal Paperclips](https://www.decisionproblem.com/paperclips/), teaching concepts (eg orthogonality) through play
+*   Demos like [Nicky Case’s](https://aisafety.dance/), or of topics from recent alignment research papers
 
-Many concepts in AI safety could be translated for a wider audience, with thoughtful design and an eye for virality.
+### 3. Infrastructure for the EA and AI safety community
 
-Examples include:
+Think marketplaces or platforms, to address common problems shared by people and orgs working to reduce xrisk.
 
-- Microsites like [AI 2027](https://ai-2027.com/), showcasing concepts through narrative & interactive design
-- Visualizations like [Epoch](https://epoch.ai/) and [Our World in Data](https://ourworldindata.org/)
-- Transparency for inside what’s happening inside labs, and across the AI supply chain
-- Courses like [Bluedot](https://bluedot.org/), helping people upskill into relevant domains
-- Games like [Universal Paperclips](https://www.decisionproblem.com/paperclips/), teaching concepts (eg orthogonality) through play
-- Demos like [Nicky Case’s](https://aisafety.dance/), or of topics from recent alignment research papers
+Examples include:
 
-### 3. Infrastructure for the EA and AI safety community
+*   Platforms for jobs, like the [80k Job Board](https://jobs.80000hours.org/) or an “AI safety LinkedIn”
+    *   Or other work opportunities (eg fellowships, grassroots coordination)
+    *   Platforms for funding, like [Manifund](https://manifund.org/) or an open-source [S-process](https://survivalandflourishing.fund/s-process)Or whitelabeled platforms for microgrants like [ACX Grants](https://www.astralcodexten.com/p/apply-for-an-acx-grant-2025) or [Bluedot Rapid Grants](https://bluedot.org/programs/rapid-grants)
+    *   Or AI-powered grantmaking and review
+    *   Platforms for writing, like [LessWrong](https://www.lesswrong.com/) or [EA Forum](https://forum.effectivealtruism.org/) or [Alignment Forum](https://www.alignmentforum.org/)Or for research, like [Distill](https://distill.pub/) or [Unjournal](https://www.unjournal.org/)
+*   Apps organizing events (conferences, workshops, retreats), aka “better Swapcard”
 
-Think marketplaces or platforms, to address common problems shared by people and orgs working to reduce xrisk.
+## What we offer
 
-Examples include:
+*   $100k in investment, as a SAFE at a $2m postmoney cap
+    *   (Maybe a grant if you’re a committed nonprofit, but we’ll try to argue you out of this)
+*   Work alongside a cohort of ~12 founders who care about xrisk and flourishing futures
+*   Weekly office hours and mentorship
+*   Dinners with speakers like <Andreas Stuhlmueller, Geoff Ralston, David Holz, Emmett Shear>
+*   Office space to work at Mox
+*   Demo Day with aligned VCs and philanthropic funders
 
-- Platforms for jobs, like the [80k Job Board](https://jobs.80000hours.org/) or an “AI safety LinkedIn”
-    - Or other work opportunities (eg fellowships, grassroots coordination)
-- Platforms for funding, like [Manifund](https://manifund.org/) or an open-source [S-process](https://survivalandflourishing.fund/s-process)
-    - Or whitelabeled platforms for microgrants like [ACX Grants](https://www.astralcodexten.com/p/apply-for-an-acx-grant-2025) or [Bluedot Rapid Grants](https://bluedot.org/programs/rapid-grants)
-    - Or AI-powered grantmaking and review
-- Platforms for writing, like [LessWrong](https://www.lesswrong.com/) or [EA Forum](https://forum.effectivealtruism.org/) or [Alignment Forum](https://www.alignmentforum.org/)
-    - Or for research, like [Distill](https://distill.pub/) or [Unjournal](https://www.unjournal.org/)
-- Apps organizing events (conferences, workshops, retreats), aka “better Swapcard”
+## Timeline
 
-## What we offer
+*   June 11: Applications open
+*   June 24: Applications due
+    *   Rolling video interviews; decisions by July 1
+*   July 27: Program kickoff
+    *   2 week of ideating & cofounder matching
+    *   10 weeks of mentorship, dinners with speakers
+*   Oct 16: Demo Day
+    *   Pitch to an audience of angels, VCs and philanthropic funders
 
-- <$100k> in investment, as a SAFE at a <$2m> postmoney cap
-- Work alongside a cohort of founders who care about xrisk and flourishing futures
-- Weekly office hours with Austin Chen and Oliver Habryka
-- Speakers like <Andreas Stuhlmueller, Geoff Ralston, David Holz, Emmett Shear>
-- Space to work at Mox and Lighthaven
-- Demo Day with aligned VCs and philanthropic funders
+### Virtues we cherish
 
-## <Timeline>
+We're seeking founders who are:
 
-- May 29: Announce the program
-    - Submit applications through Airtable
-    - *Jun 5-7: LessOnline*
-- Jun 10: Early applications due
-    - *Jun 12-14: Manifest*
-- Jun 24: All applications due
-- July 20th: Program kickoff
-    - <12 weeks of programming>
-    - Probably: weekly speakers, workshops, office hours, dinners
-    - Maybe: 2 weeks of iterating, cofounder matching up front?
-    - Maybe: 6 weeks at Lighthaven, 6 weeks at Mox
-- Sep 18: demo day
+*   Loving, wholesome, earnest
+*   Humble, called to serve, takes out the trash
+*   Caring, obsessive, dedicated to craft
+*   Fast, iterative, gets things done
+*   Idealistic, optimistic, dreamers
+*   Scrappy, resourceful, practical
+*   Open, honest, works in public
+*   Naughty, humorous, spirited
+*   Honorable, trustworthy
+*   Bountiful, always project-ing
+*   Scope-sensitive, econ-brained
 
 ## FAQ
 
-**Why does Surplus encourage for-profit corps?**
+**Why does Surplus encourage for-profit corps?**
 
-First, there are many standard reasons to use a for-profit corporation when trying to do good. For-profits operate with tight feedback loops. They can be more certain that they produce value (see: gains from trade, [Paul Graham on wealth](https://paulgraham.com/wealth.html), “surplus”). They can tap into a much larger pool of available financing. They can compensate founders and early employees with financial upside, should the venture work out well.
+First, there are many standard reasons to use a for-profit corporation when trying to do good. For-profits operate with tight feedback loops. They can be more certain that they produce value (see: gains from trade, [Paul Graham on wealth](https://paulgraham.com/wealth.html), “surplus”). They can tap into a much larger pool of available financing. They compensate founders and employees with high upside upon a successful exit, and thereby draw in better talent.
 
-For-profit models are surprisingly flexible: [Elicit](https://elicit.com/), [Apollo](https://www.apolloresearch.ai/), [Goodfire](https://www.goodfire.ai/), [Wave](https://www.wave.com/en/), [Dwarkesh](https://www.dwarkesh.com/), [Lighthaven](https://lighthaven.space/) and [Manifest](https://manifest.is/) all demonstrate different approaches to making money while also serving the public interest.
+For-profit models are surprisingly flexible: [Elicit](https://elicit.com/), [Apollo](https://www.apolloresearch.ai/), [Goodfire](https://www.goodfire.ai/), [Wave](https://www.wave.com/en/), [Dwarkesh](https://www.dwarkesh.com/), [Lighthaven](https://lighthaven.space/) and [Manifest](https://manifest.is/) all demonstrate different approaches to making money while also serving the public interest.
 
-Now is an excellent time to start a for-profit, given [vast torrents of funding](https://nanransohoff.substack.com/p/the-third-wave-of-american-philanthropy) available from Anthropic employees and OpenAI Foundation. These funds are distributed out of 501c3 entities — but 501c3s can pay for for-profit services, and invest in for-profit corps. There’s a $100B market waiting to be constructed; shovels waiting to be sold.
+Now is an excellent time to start a for-profit, given [vast torrents of funding](https://nanransohoff.substack.com/p/the-third-wave-of-american-philanthropy) available from Anthropic employees and OpenAI Foundation. These funds are distributed out of 501c3 entities — but 501c3s can pay for for-profit services, and invest in for-profit corps. There’s a $100B market waiting to be constructed; shovels waiting to be sold.
 
-And ideologically, we think that equity is a beautiful mechanism for value alignment and credit allocation. Manifund has previously experimented with [impact certificates](https://manifund.org/about/impact-certificates) to bring this concept to the charity world; now, we think that plain ol’ corporate equity will work fine, maybe with a light sprinkling of retroactive funding or prize rounds or advance market commitments to finance public goods.
+And ideologically, we think that equity is a beautiful mechanism for value alignment and credit allocation. Manifund has previously experimented with [impact certificates](https://manifund.org/about/impact-certificates) to bring this concept to the charity world; now, we think that plain ol’ corporate equity will work fine, maybe with a light sprinkling of retroactive funding or prize rounds or advance market commitments to finance public goods.
 
-**Why start a startup, rather than join a lab or an AI safety org?**
+**Why start a startup, rather than join a lab or an AI safety org?**
 
-It is absolutely the case that Anthropic or METR are great places to work. But maybe:
+It is absolutely the case that Anthropic or METR are great places to work. But maybe:
 
-- You’re well suited towards starting projects: you enjoy independence, have high risk tolerance, and moving fast
-- You’re worried the balance of power, as labs accumulate more talent and funding
-- You have an idea that you can’t stop thinking about, a pain point you have to solve, something nobody else is doing that you think will have a big impact
+*   You’re well suited towards starting projects: you enjoy independence, ship fast, update quickly and are willing to fail
+*   You think that establishing new orgs is good for accountability and avoiding groupthink, as a counterweight to frontier labs accumulating talent and money
+*   You have an idea that you can’t stop thinking about, something you think will be great for the world, something that nobody else is doing (or worse: somebody is doing, but badly)
 
-**Why should I join an incubator, when vibecoding is so easy?**
+**Why should I join an incubator, when vibecoding is so easy?**
 
-Building great software takes more than coding. Product taste, visual design, distribution, sales and marketing are all things that 2026 LLMs still fail at. (Not to mention long-term coherence and maintainability within a codebase.) We’ve developed these supplementary skills needed to ship successful products, and would love to foster them in a new generation of founders.
+Building great software takes more than coding. Product taste, visual design, distribution, sales and marketing are all things that 2026 LLMs still fail at. We’ve developed these supplementary skills needed to ship successful products, and would love to foster them in a new generation of founders.
 
-**What kind of outcomes is Surplus hoping for?**
+Beyond advice & mentorship, Surplus also provides a cohort of folks working on similar problems, some of whom may be great cofounders. And finally, an incubator is a container for focus, a commitment device, a way to hold yourself accountable and get your idea out into the world.
 
-First and foremost, we’re hoping to incubate projects that produce massive good for the world. Of course, we’d be happy if our investments turn out profitable, helping us invest in more great projects. Finally, Manifund, Lightcone, and many others would be excited to hire founder-shaped folks; even if your specific project doesn’t succeed, your time at Surplus will be a fantastic work test.
+**Do you accept non-software startups?**
+
+Maybe? We have the most experience on startups with a major software component, but have also built things like Manifest and Mox. Apply if you wish!
+
+**Is Surplus open to students?**
+
+Yes! If accepted to Surplus, we do ask that students plan to take a leave of absence in the fall, or otherwise prepare so you can work on your startup without distractions.
+
+**Can Surplus provide visas for international founders?**
+
+Yes! We can support accepted founders on a J-1 visa, through Mox. See **[Researchers and Founders: Join Mox’s J-1 Global Expert Fellowship!](https://www.notion.so/Researchers-and-Founders-Join-Mox-s-J-1-Global-Expert-Fellowship-30d54492ea7a80bc9c5ce70ccfceae07?pvs=21)**
