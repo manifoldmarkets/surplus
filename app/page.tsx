@@ -33,18 +33,22 @@ export default function Home() {
             <div className="halftone absolute inset-6 opacity-65 mix-blend-multiply [clip-path:polygon(33%_0,67%_0,67%_33%,100%_33%,100%_67%,67%_67%,67%_100%,33%_100%,33%_67%,0_67%,0_33%,33%_33%)]"></div>
           </div>
 
-          <div className="mb-[18px] flex flex-wrap items-center gap-3 max-bp:gap-2">
-            <span className="whitespace-nowrap bg-ink-dark px-3 py-1.5 font-mono text-sm uppercase tracking-widest text-paper max-bp:whitespace-normal">
+          <div className="mb-[18px] flex flex-wrap items-center gap-3 max-bp:hidden">
+            <span className="whitespace-nowrap bg-ink-dark px-3 py-1.5 font-mono text-sm uppercase tracking-widest text-paper">
               A Software Incubator
             </span>
-            <span className="whitespace-nowrap bg-ink-pink px-3 py-1.5 font-mono text-sm uppercase tracking-widest text-paper max-bp:whitespace-normal">
+            <span className="whitespace-nowrap bg-ink-pink px-3 py-1.5 font-mono text-sm uppercase tracking-widest text-paper">
               For <b className="font-bold text-ink-dark">Massive Public Good</b>
             </span>
             <span className="font-display text-xl leading-none text-ink-blue">✻</span>
-            <span className="whitespace-nowrap bg-ink-dark px-3 py-1.5 font-mono text-sm uppercase tracking-widest text-paper max-bp:whitespace-normal">
+            <span className="whitespace-nowrap bg-ink-dark px-3 py-1.5 font-mono text-sm uppercase tracking-widest text-paper">
               In the Age of <b className="font-bold text-ink-yellow">Transformative AI</b>
             </span>
           </div>
+          <p className="m-0 mb-3 hidden font-mono text-xs uppercase leading-relaxed tracking-[0.12em] text-ink-dark max-bp:block">
+            A software incubator for <b className="font-bold text-ink-pink">massive public good</b> in
+            the age of <b className="font-bold text-ink-blue">transformative AI</b>
+          </p>
 
           <h1 className="misreg relative m-0 font-display text-[clamp(76px,18vw,276px)] leading-[0.8] tracking-[-0.045em] text-ink-dark max-bp:whitespace-nowrap max-bp:text-[clamp(54px,17.5vw,124px)] max-bp:tracking-[-0.055em]">
             SUR<span className="misreg-accent text-ink-pink">PLUS</span>
@@ -52,8 +56,8 @@ export default function Home() {
 
           <div className="mt-1 flex items-baseline justify-between border-t-[3px] border-ink-dark pt-2.5 font-mono text-sm uppercase tracking-widest max-bp:flex-col max-bp:items-start max-bp:gap-1.5">
             <span>☞&nbsp;&nbsp;Organized by Manifund &amp; Mox</span>
-            <span>3 months · starting late July</span>
-            <span>San Francisco</span>
+            <span className="max-bp:hidden">3 months · starting late July</span>
+            <span className="max-bp:hidden">San Francisco</span>
             <span className="max-bp:hidden"></span>
             <span className="max-bp:hidden"></span>
           </div>
@@ -179,7 +183,7 @@ export default function Home() {
                   <span className="font-display text-[26px] leading-none text-ink-pink">$100K</span>
                   <span className="flex min-w-0 flex-col gap-1">
                     <span className="font-condensed text-[13px] font-bold uppercase leading-[1.15] tracking-wide">
-                      Investment, on a SAFE
+                      Seed funding
                     </span>
                     <span className="font-mono text-[13px] uppercase leading-[1.15] tracking-widest text-ink-blue">
                       $2M post-money cap
@@ -204,7 +208,7 @@ export default function Home() {
                       Founders in the cohort
                     </span>
                     <span className="font-mono text-[13px] uppercase leading-[1.15] tracking-widest text-ink-blue">
-                      A small, dense room
+                      High intensity, tight knit
                     </span>
                   </span>
                 </div>
@@ -488,17 +492,17 @@ export default function Home() {
             <div className="relative flex min-h-[220px] flex-col border-[3px] border-ink-dark bg-paper px-[18px] pb-5 pt-[22px] max-bp:min-h-0">
               <div className="font-mono text-sm uppercase tracking-widest opacity-70">No. 02 — Cohort</div>
               <div className="mt-2.5 font-condensed text-3xl font-bold uppercase leading-none tracking-wide max-bp:text-xl">
-                A cohort of <span className="text-ink-pink">~12 founders</span>
+                A cohort of <span className="text-ink-pink">~10 founders</span>
               </div>
               <div className="mt-auto pt-3 font-serif text-sm italic leading-snug">
-                Work alongside people who care about xrisk and flourishing futures.
+                Work alongside others who care about xrisk and flourishing futures.
               </div>
             </div>
 
             <div className="relative flex min-h-[220px] flex-col border-[3px] border-ink-dark bg-paper px-[18px] pb-5 pt-[22px] max-bp:min-h-0">
               <div className="font-mono text-sm uppercase tracking-widest opacity-70">No. 03 — Mentorship</div>
               <div className="mt-2.5 font-condensed text-3xl font-bold uppercase leading-none tracking-wide max-bp:text-xl">
-                Weekly office hours &amp; mentorship
+                Office hours &amp; mentorship
               </div>
               <div className="mt-auto pt-3 font-serif text-sm italic leading-snug">
                 Every week of the program.
@@ -511,7 +515,7 @@ export default function Home() {
                 Dinners with <span className="text-ink-yellow">speakers</span>
               </div>
               <div className="mt-auto pt-3 font-serif text-sm italic leading-snug">
-                Shared meals with founders and builders we admire.
+                Shared meals with founders we admire.
               </div>
             </div>
 
