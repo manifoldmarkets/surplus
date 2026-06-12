@@ -632,7 +632,7 @@ export default function Home() {
       <section className="relative mt-12 overflow-hidden border-y-[3px] border-t-8 border-ink-dark bg-paper-deep pb-16 pt-2 max-bp:mt-8 max-bp:pb-10">
         <span
           aria-hidden="true"
-          className="halftone pointer-events-none absolute -right-[140px] top-[210px] h-[340px] w-[340px] opacity-40 mix-blend-multiply [--dot-gap:12px] [--dot:2.6px]"
+          className="halftone pointer-events-none absolute -right-[140px] top-[210px] h-[340px] w-[340px] opacity-40 mix-blend-multiply [--dot-gap:12px] [--dot:2.6px] max-bp:hidden"
         ></span>
         <span
           aria-hidden="true"
