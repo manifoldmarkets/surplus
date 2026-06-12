@@ -31,10 +31,27 @@ const inconsolata = Inconsolata({
   display: "swap",
 });
 
+const title = "Surplus — a software incubator";
+const description =
+  "A software incubator for massive public good in the age of transformative AI. Organized by Manifund & Mox. $100k on a SAFE · 3 months · starting late July in San Francisco. Apply by June 24.";
+
 export const metadata: Metadata = {
-  title: "Surplus — a software incubator",
-  description:
-    "A software incubator for massive public good in the age of transformative AI. Organized by Manifund & Lightcone. $100K + SAFE, 12 weeks, Berkeley.",
+  metadataBase: new URL("https://surplus.dev"),
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    url: "https://surplus.dev",
+    siteName: "Surplus",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({
