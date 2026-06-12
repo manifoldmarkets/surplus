@@ -62,7 +62,7 @@ Examples include:
 
 ## Timeline
 
-*   June 11: Applications open
+*   June 12: Applications open
     *   Apply via [this form](https://airtable.com/appaxqJfxht7OronH/pag3FYwDukcF9syiu/form)
 *   June 24: Applications due
     *   Rolling video interviews; decisions by July 1
