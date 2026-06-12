@@ -334,15 +334,15 @@ export default function Home() {
               </div>
               <ul className="font-serif text-sm leading-snug [&_a:hover]:bg-ink-yellow [&_a:hover]:text-ink-dark [&_a:hover]:no-underline [&_a]:text-ink-blue [&_a]:underline [&_a]:decoration-1 [&_a]:underline-offset-2 [&_li:last-child]:border-b-0 [&_li]:relative [&_li]:border-b [&_li]:border-dotted [&_li]:border-ink-dark/40 [&_li]:py-[7px] [&_li]:pl-[22px] [&_li]:before:absolute [&_li]:before:left-0 [&_li]:before:top-[7px] [&_li]:before:text-sm [&_li]:before:text-ink-pink [&_li]:before:content-['✦']">
                 <li>
-                  Guardian angels / &ldquo;Digital Twins&rdquo;, as{" "}
-                  <a href="https://gwern.net/guardian-angel">described by Gwern</a>
-                </li>
-                <li>
                   Fact-checking like{" "}
                   <a href="https://communitynotes.x.com/guide/en/about/introduction">
                     Community Notes
                   </a>{" "}
                   or <a href="https://www.pangram.com/">Pangram</a>
+                </li>
+                <li>
+                  Guardian angels / &ldquo;Digital Twins&rdquo;, as{" "}
+                  <a href="https://gwern.net/guardian-angel">described by Gwern</a>
                 </li>
                 <li>
                   Knowledge bases like <a href="https://grokipedia.com/">Grokipedia</a> or{" "}
@@ -378,7 +378,7 @@ export default function Home() {
                 </h3>
               </div>
               <p className="mb-[18px] font-serif text-base italic leading-snug text-ink-dark">
-                Many concepts in AI safety could be translated for a wider audience, with thoughtful
+                Many important concepts could be translated for a wider audience, with thoughtful
                 design and an eye for virality.
               </p>
               <div className="mb-3 border-y-[1.5px] border-ink-dark py-1.5 font-mono text-sm uppercase tracking-widest text-ink-blue">
@@ -399,13 +399,13 @@ export default function Home() {
                   into relevant domains
                 </li>
                 <li>
-                  Games like{" "}
-                  <a href="https://www.decisionproblem.com/paperclips/">Universal Paperclips</a>,
-                  teaching concepts (eg orthogonality) through play
-                </li>
-                <li>
                   Demos like <a href="https://aisafety.dance/">Nicky Case&rsquo;s</a>, or of topics
                   from recent alignment research papers
+                </li>
+                <li>
+                  Games like <a href="https://manifold.markets">Manifold</a> or{" "}
+                  <a href="https://www.decisionproblem.com/paperclips/">Universal Paperclips</a>,
+                  teaching concepts through play
                 </li>
               </ul>
             </article>
@@ -418,12 +418,11 @@ export default function Home() {
               <div className="relative z-[1] mb-[18px] flex items-start gap-4">
                 <span className="font-display text-7xl leading-none text-ink-dark misreg-pink shrink-0">03</span>
                 <h3 className="relative z-[1] mt-1.5 font-condensed text-xl font-bold uppercase leading-tight tracking-wide">
-                  Infra for the EA &amp; Safety Community
+                  Community infra
                 </h3>
               </div>
               <p className="mb-[18px] font-serif text-base italic leading-snug text-ink-dark">
-                Marketplaces or platforms, addressing common problems shared by people and orgs
-                working to reduce xrisk.
+                Marketplaces or platforms, addressing common problems in EA, AI safety, and others working towards a beautiful future
               </p>
               <div className="mb-3 border-y-[1.5px] border-ink-dark py-1.5 font-mono text-sm uppercase tracking-widest text-ink-blue">
                 — Examples —
@@ -433,7 +432,7 @@ export default function Home() {
                   Job platforms like the <a href="https://jobs.80000hours.org/">80k Job Board</a>{" "}
                   or an &ldquo;AI safety LinkedIn&rdquo;
                 </li>
-                <li>Other work opportunities — fellowships, grassroots coordination</li>
+                <li>Or other opportunities — fellowships, grassroots political coordination</li>
                 <li>
                   Funding platforms like <a href="https://manifund.org/">Manifund</a> or an
                   open-source{" "}
@@ -455,10 +454,6 @@ export default function Home() {
                 <li>
                   Research platforms like <a href="https://distill.pub/">Distill</a> or{" "}
                   <a href="https://www.unjournal.org/">Unjournal</a>
-                </li>
-                <li>
-                  Apps for events — conferences, workshops, retreats — aka &ldquo;better
-                  Swapcard&rdquo;
                 </li>
               </ul>
             </article>
