@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Bowlby_One, Antonio, Newsreader, Inconsolata } from "next/font/google";
 import "./globals.css";
-import WelcomePopup from "./welcome-popup";
 
 const bowlby = Bowlby_One({
   variable: "--font-bowlby",
@@ -53,7 +52,6 @@ export default function RootLayout({
         data-palette="pink-blue"
       >
         {children}
-        <WelcomePopup />
       </body>
     </html>
   );

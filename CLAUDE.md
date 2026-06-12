@@ -21,8 +21,8 @@ There are no tests.
 A single-page Next.js 16 (App Router) marketing site for **Surplus**, a software incubator. Deployed on **Vercel** — pushes to `main` ship to production.
 
 - **`app/page.tsx`** — the entire landing page as one server component. All copy and layout live inline here (masthead, hero, manifesto, projects, offers, timeline, FAQ, CTA, footer). `README.md` is the canonical source for the site's *content* (dates, dollar amounts, project examples, FAQ answers) — keep them in sync.
-- **`app/layout.tsx`** — root layout; loads four Google fonts as CSS variables and mounts the site-wide `<WelcomePopup />`.
-- **`app/welcome-popup.tsx`** — the only client component (`"use client"`); a first-visit modal gated by `localStorage`.
+- **`app/layout.tsx`** — root layout; loads four Google fonts as CSS variables.
+- **`app/welcome-popup.tsx`** — the only client component (`"use client"`); a first-visit "this is a mockup" modal gated by `localStorage`. Currently disabled (not mounted anywhere); re-enable by rendering `<WelcomePopup />` in the layout.
 - **`app/globals.css`** — Tailwind v4 setup. Design tokens (colors, fonts, the `820px` `bp` breakpoint) live in the `@theme` block; bespoke print effects (`misreg*` text-shadows, `halftone` dot field, paper grain) are `@utility`/`@layer base` rules.
 
 ### Design conventions (important)
