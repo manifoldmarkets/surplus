@@ -31,4 +31,4 @@ A single-page Next.js 16 (App Router) marketing site for **Surplus**, a software
 - **Styling is Tailwind-inline.** Don't add CSS to `globals.css` except bespoke print effects. Use the token utilities: `bg-paper`, `text-ink-pink/blue/yellow/dark`, `font-display/condensed/serif/mono`, and `misreg`, `halftone`.
 - **Responsive uses a single max-width breakpoint:** `max-bp:` (≤820px) for the main layout, plus `max-sm:` for phone tweaks. It's max-width (desktop-first), not the usual min-width.
 - The path alias `@/*` maps to the repo root.
-- Path `/surplus` on manifund.org (`https://manifund.org/surplus`) is the live expression of interest form, both Apply buttons link to.
+- `/apply` redirects (via `next.config.ts`) to the live application form on Airtable; all Apply links on the page point to `/apply`.

@@ -212,7 +212,7 @@ export default function Home() {
 
               <div className="flex justify-end pt-2 max-bp:justify-center">
                 <a
-                  href="https://manifund.org/surplus"
+                  href="/apply"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Apply now"
@@ -560,12 +560,14 @@ export default function Home() {
                   Applications Open
                 </div>
                 <div className="mt-1.5 font-serif text-sm italic text-ink-dark">
-                  Apply at{" "}
+                  Apply via{" "}
                   <a
-                    href="https://manifund.org/surplus"
+                    href="/apply"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-ink-blue underline underline-offset-2 hover:bg-ink-yellow hover:text-ink-dark hover:no-underline"
                   >
-                    manifund.org/surplus
+                    this form
                   </a>
                   .
                 </div>
@@ -884,7 +886,7 @@ export default function Home() {
             </p>
             <a
               className="inline-flex items-center gap-3.5 border-[3px] border-paper bg-ink-pink px-[30px] py-[22px] font-condensed text-3xl font-bold uppercase tracking-wide text-paper no-underline shadow-[8px_8px_0_var(--color-ink-blue)] transition-[transform,box-shadow] duration-200 ease-out hover:-translate-x-[3px] hover:-translate-y-[3px] hover:shadow-[11px_11px_0_var(--color-ink-blue)] active:translate-x-[3px] active:translate-y-[3px] active:shadow-[3px_3px_0_var(--color-ink-blue)] max-bp:px-[22px] max-bp:py-4 max-bp:text-xl"
-              href="https://manifund.org/surplus"
+              href="/apply"
               target="_blank"
               rel="noopener noreferrer"
             >
