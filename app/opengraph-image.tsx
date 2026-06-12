@@ -211,8 +211,8 @@ export default async function Image() {
             <div
               style={{
                 position: "absolute",
-                left: 168,
-                top: 188,
+                left: 171,
+                top: 183,
                 transform: "rotate(38deg)",
                 fontFamily: "Antonio",
                 fontSize: 18,
@@ -225,7 +225,7 @@ export default async function Image() {
             <div
               style={{
                 position: "absolute",
-                left: -14,
+                left: -4,
                 top: 42,
                 transform: "rotate(-90deg)",
                 fontFamily: "Antonio",
