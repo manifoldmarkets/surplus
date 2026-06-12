@@ -552,7 +552,7 @@ export default function Home() {
 
           <div className="mt-8 border-t-[3px] border-ink-dark">
             <div className="grid grid-cols-[160px_60px_1fr_240px] items-center gap-6 border-b-[3px] border-ink-dark py-[22px] max-bp:grid-cols-[88px_24px_1fr] max-bp:gap-3.5">
-              <span className="font-display text-xl leading-none text-ink-pink max-bp:text-lg">Jun 11</span>
+              <span className="font-display text-xl leading-none text-ink-pink max-bp:text-lg">Jun 12</span>
               <span className="h-7 w-7 justify-self-center rounded-full bg-ink-pink shadow-[0_0_0_4px_var(--color-paper),0_0_0_5.5px_var(--color-ink-pink)]"></span>
               <div>
                 <div className="font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
