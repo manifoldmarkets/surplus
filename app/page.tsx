@@ -6,7 +6,7 @@ export default function Home() {
         <div className="flex flex-wrap items-center justify-between gap-5 bg-ink-dark px-6 py-1.5 font-mono text-sm uppercase tracking-widest text-paper max-bp:flex-nowrap max-bp:justify-center max-bp:gap-2.5 max-bp:px-4 max-bp:py-2.5">
           <span>☞&nbsp;&nbsp;Cohort begins July 20</span>
           <span className="max-bp:hidden">
-            <b className="text-ink-yellow">Applications open</b> · Early deadline Jun 10 · Final Jun 24
+            <b className="text-ink-yellow">Applications open</b> · Early deadline Jun 24 · Final Jul 10
           </span>
           <span className="max-bp:hidden">$100K + SAFE · 12 weeks · Berkeley</span>
         </div>
@@ -290,7 +290,7 @@ export default function Home() {
               <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;Office hours</span>
               <span className="mt-1 block opacity-85">Weekly office hours and mentorship.</span>
               <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;Deadline</span>
-              <span className="mt-1 block opacity-85">Apply by June 24; decisions by July 1.</span>
+              <span className="mt-1 block opacity-85">Apply early by June 24; final deadline July 10.</span>
             </div>
           </div>
         </div>
@@ -581,10 +581,26 @@ export default function Home() {
               <span className="h-7 w-7 justify-self-center rounded-full bg-ink-pink shadow-[0_0_0_4px_var(--color-paper),0_0_0_5.5px_var(--color-ink-pink)]"></span>
               <div>
                 <div className="font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
+                  Early Applications Due
+                </div>
+                <div className="mt-1.5 font-serif text-sm italic text-ink-dark">
+                  Apply early for priority review; rolling video interviews.
+                </div>
+              </div>
+              <span className="text-right font-mono text-sm uppercase tracking-widest text-ink-blue max-bp:hidden [&_b]:text-ink-pink">
+                <b>Priority</b>
+              </span>
+            </div>
+
+            <div className="grid grid-cols-[160px_60px_1fr_240px] items-center gap-6 border-b-[3px] border-ink-dark py-[22px] max-bp:grid-cols-[88px_24px_1fr] max-bp:gap-3.5">
+              <span className="font-display text-xl leading-none text-ink-pink max-bp:text-lg">Jul 10</span>
+              <span className="h-7 w-7 justify-self-center rounded-full bg-ink-pink shadow-[0_0_0_4px_var(--color-paper),0_0_0_5.5px_var(--color-ink-pink)]"></span>
+              <div>
+                <div className="font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
                   Applications Due
                 </div>
                 <div className="mt-1.5 font-serif text-sm italic text-ink-dark">
-                  Rolling video interviews; decisions by July 1.
+                  Final deadline; rolling video interviews continue.
                 </div>
               </div>
               <span className="text-right font-mono text-sm uppercase tracking-widest text-ink-blue max-bp:hidden [&_b]:text-ink-pink">
@@ -893,7 +909,7 @@ export default function Home() {
               <span>
                 Apply by June 24
                 <span className="block font-mono text-sm font-normal normal-case tracking-widest opacity-80">
-                  Decisions by July 1
+                  Early deadline · rolling decisions
                 </span>
               </span>
             </a>
