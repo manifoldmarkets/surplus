@@ -180,7 +180,7 @@ export default async function Image() {
                 boxShadow: `7px 7px 0 ${inkBlue}`,
               }}
             >
-              APPLY BY JUNE 24 » SURPLUS.DEV
+              APPLY BY JULY 10 » SURPLUS.DEV
             </div>
           </div>
 

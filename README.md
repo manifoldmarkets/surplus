@@ -2,7 +2,7 @@ Surplus is an incubator for software startups, organized by [Manifund](https://m
 
 > “Surplus” is the value created through positive-sum trades; what markets produce in abundance.
 
-[Apply here](https://airtable.com/appaxqJfxht7OronH/pag3FYwDukcF9syiu/form) — apply early by June 24 for priority review; final deadline July 10!
+[Apply here](https://airtable.com/appaxqJfxht7OronH/pag3FYwDukcF9syiu/form) — applications due July 10; rolling decisions, so apply soon!
 
 ## Projects we’re excited for
 

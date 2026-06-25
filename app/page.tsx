@@ -6,7 +6,7 @@ export default function Home() {
         <div className="flex flex-wrap items-center justify-between gap-5 bg-ink-dark px-6 py-1.5 font-mono text-sm uppercase tracking-widest text-paper max-bp:flex-nowrap max-bp:justify-center max-bp:gap-2.5 max-bp:px-4 max-bp:py-2.5">
           <span>☞&nbsp;&nbsp;Cohort begins July 20</span>
           <span className="max-bp:hidden">
-            <b className="text-ink-yellow">Applications open</b> · Early deadline Jun 24 · Final Jul 10
+            <b className="text-ink-yellow">Applications open</b> · Deadline Jul 10 · Rolling decisions
           </span>
           <span className="max-bp:hidden">$100K + SAFE · 12 weeks · Berkeley</span>
         </div>
@@ -226,7 +226,7 @@ export default function Home() {
                   <span className="absolute inset-0 grid place-items-center rounded-full bg-ink-pink text-center text-paper shadow-[inset_0_0_0_4px_var(--color-paper),inset_0_0_0_6px_var(--color-ink-pink)]">
                     <span className="flex flex-col items-center gap-1.5">
                       <span className="font-display text-5xl leading-none tracking-wide max-bp:text-4xl">APPLY</span>
-                      <span className="font-mono text-sm uppercase tracking-widest">By June 24th</span>
+                      <span className="font-mono text-sm uppercase tracking-widest">By July 10th</span>
                       <span className="mt-0.5 font-display text-xl tracking-wider">☞ ☞ ☞</span>
                     </span>
                   </span>
@@ -290,7 +290,7 @@ export default function Home() {
               <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;Office hours</span>
               <span className="mt-1 block opacity-85">Weekly office hours and mentorship.</span>
               <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;Deadline</span>
-              <span className="mt-1 block opacity-85">Apply early by June 24; final deadline July 10.</span>
+              <span className="mt-1 block opacity-85">Applications due July 10; rolling decisions, so apply soon.</span>
             </div>
           </div>
         </div>
@@ -907,9 +907,9 @@ export default function Home() {
             >
               <span className="font-display text-3xl">☞</span>
               <span>
-                Apply by June 24
+                Apply by July 10
                 <span className="block font-mono text-sm font-normal normal-case tracking-widest opacity-80">
-                  Early deadline · rolling decisions
+                  Final deadline · rolling decisions
                 </span>
               </span>
             </a>
