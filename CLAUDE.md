@@ -32,10 +32,11 @@ An internal tool for reviewing Surplus applications. **Airtable is the source of
 - **`lib/review/fields.ts`** — Airtable field-ID map, the normalized `Applicant` type, and `applicationText()`. Add new Airtable fields here first; everything else derives from it.
 - **`lib/review/airtable.ts`** — REST client (list/get/update records, create fields via the Meta API). Gotcha: on writes, `returnFieldsByFieldId` goes in the JSON body, not the query string.
 - **`lib/review/auth.ts`** + **`proxy.ts`** — shared-password auth against `REVIEW_PASSWORD`. The cookie holds a salted SHA-256 of the password; the salt string is duplicated in both files — keep in sync. `proxy.ts` (Next 16's rename of middleware) guards `/review/*` and `/api/review/*`; API routes also re-check via `requireAuth()`.
-- **`app/review/`** — pages: list/kanban (`applicants-view.tsx`), detail with autosaving notes (`app/[id]/`), AI grading (`ai/`), batch email (`email/`). Shared widgets in `ui.tsx`.
+- **`app/review/`** — pages: list/kanban (`applicants-view.tsx`), detail with autosaving notes (`app/[id]/`), AI grading (`ai/`), Pangram AI detection (`pangram/`), batch email (`email/`). Shared widgets in `ui.tsx`.
 - **AI pipeline** — grades via OpenRouter (`OPENROUTER_API_KEY`), one API call per applicant orchestrated client-side (3 concurrent); writes `"<label> prio"`/`"<label> notes"` fields back to Airtable, auto-creating them (needs a PAT with `schema.bases:write`). Default prompt lives in `lib/review/ai.ts`.
 - **Batch email** — via Resend (`RESEND_API_KEY`), plain-text with `{{merge tag}}` rendering in `lib/review/merge.ts` (shared by client preview and server send). Sender domain `manifund.org` must be verified in Resend.
-- Env vars (`.env` locally, Vercel project settings in prod): `AIRTABLE_API_KEY`, `REVIEW_PASSWORD`, `OPENROUTER_API_KEY`, `RESEND_API_KEY`.
+- **Pangram AI detection** — runs each applicant's main idea through Pangram (`PANGRAM_API_KEY`; async submit-then-poll client in `lib/review/pangram.ts`), individually from the detail page or batch from `/review/pangram` (same 3-concurrent client fan-out as AI grading). Full responses append to the InstantDB `pangramResults` table (`lib/review/instant.ts`, `@instantdb/admin`, needs `INSTANT_ADMIN_TOKEN`); the `fraction_ai` score writes to Airtable ("Pangram AI fraction", `F.pangramFractionAi`).
+- Env vars (`.env` locally, Vercel project settings in prod): `AIRTABLE_API_KEY`, `REVIEW_PASSWORD`, `OPENROUTER_API_KEY`, `RESEND_API_KEY`, `PANGRAM_API_KEY`, `INSTANT_APP_ID`, `INSTANT_ADMIN_TOKEN`.
 
 ### Next.js 16 gotchas (differs from older training data)
 

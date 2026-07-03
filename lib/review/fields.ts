@@ -43,7 +43,12 @@ export const F = {
   category: "fldjypeeOTiUQ5K91",
   austinNotes: "fldrOOJCwFyHTCbHh",
   austinPostInterviewNotes: "fldKy6GWifxtJY9fw",
+  pangramFractionAi: "fldUROVrbmmubq11u",
 } as const;
+
+// Display name of the F.pangramFractionAi field (the Meta API and
+// listFieldValues reference fields by name).
+export const PANGRAM_FIELD_NAME = "Pangram AI fraction";
 
 export const STATUSES = [
   "Needs score",
@@ -100,6 +105,7 @@ export type Applicant = {
   opusPrio: number | null;
   gptPrio: number | null;
   blendedPrio: number | null;
+  pangramFractionAi: number | null;
   status: Status | null;
   category: string[];
   cofounderNames: string[];
@@ -180,6 +186,7 @@ export function normalizeApplicant(rec: RawRecord): Applicant {
     opusPrio: num(f[F.opusPrio]),
     gptPrio: num(f[F.gptPrio]),
     blendedPrio: num(f[F.blendedPrio]),
+    pangramFractionAi: num(f[F.pangramFractionAi]),
     status: (selectName(f[F.status]) || null) as Status | null,
     category,
     cofounderNames,

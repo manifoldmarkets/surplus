@@ -164,6 +164,7 @@ export function ApplicantDetail({
               <span className="text-ink-dark/60">Blended</span>
               <span className="text-right font-bold text-ink-blue">{prioFmt(a.blendedPrio)}</span>
             </div>
+            <PangramCheck applicant={a} onSaved={onSaved} />
             {a.carolNotes && (
               <ReadonlyNotes label="Carol notes" body={a.carolNotes} />
             )}
@@ -209,6 +210,75 @@ function Section({
         {body.trim()}
       </p>
     </details>
+  );
+}
+
+// Runs the main idea through Pangram AI detection; the score lands in
+// Airtable ("Pangram AI fraction") and the full response in InstantDB.
+function PangramCheck({
+  applicant,
+  onSaved,
+}: {
+  applicant: Applicant;
+  onSaved: (a: Applicant) => void;
+}) {
+  const [state, setState] = useState<"idle" | "running" | "error">("idle");
+  const [error, setError] = useState("");
+
+  async function run() {
+    setState("running");
+    setError("");
+    try {
+      // "rerun" bypasses the stored-result cache; a first run uses it
+      const res = await fetch("/api/review/pangram/detect", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          recordId: applicant.id,
+          force: applicant.pangramFractionAi != null,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error ?? `HTTP ${res.status}`);
+      onSaved(data.applicant);
+      setState("idle");
+    } catch (e) {
+      setError(String(e));
+      setState("error");
+    }
+  }
+
+  const score = applicant.pangramFractionAi;
+  return (
+    <div className="mt-1">
+      <div className="grid grid-cols-2 gap-x-2">
+        <span className="text-ink-dark/60">Pangram AI</span>
+        <span className="text-right">
+          {state === "running" ? (
+            <span className="text-ink-blue">checking…</span>
+          ) : (
+            <>
+              {score != null && <span>{Math.round(score * 100)}% </span>}
+              <button
+                onClick={run}
+                disabled={!applicant.mainIdea.trim()}
+                title={
+                  applicant.mainIdea.trim()
+                    ? "Run the main idea through Pangram AI detection"
+                    : "No main idea text to check"
+                }
+                className="text-ink-blue underline hover:text-ink-pink disabled:cursor-default disabled:text-ink-dark/30 disabled:no-underline"
+              >
+                {score != null ? "rerun" : "run"}
+              </button>
+            </>
+          )}
+        </span>
+      </div>
+      {state === "error" && (
+        <p className="mt-1 text-right text-xs text-ink-red">{error}</p>
+      )}
+    </div>
   );
 }
 
