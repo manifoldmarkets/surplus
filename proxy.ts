@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { createHash } from "node:crypto";
 
 export const config = {
-  matcher: ["/review/:path*", "/api/review/:path*"],
+  matcher: ["/review/:path*", "/api/review/:path*", "/arena/:path*"],
 };
 
 const AUTH_COOKIE = "surplus_review";

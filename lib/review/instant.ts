@@ -4,7 +4,7 @@ import type { PangramResult } from "@/lib/review/pangram";
 
 // InstantDB app from REVIEW-SPEC.md. Airtable stays the source of truth for
 // review state; Instant only stores raw payloads that don't fit Airtable
-// cells (currently full Pangram responses).
+// cells (full Pangram responses, arena pairwise comparisons).
 const APP_ID =
   process.env.INSTANT_APP_ID || "fb98d9c6-b4a0-4ecb-935d-4cd969c873d6";
 
@@ -35,6 +35,58 @@ export async function latestPangramResult(
     .filter((r) => r.text === text && r.response)
     .sort((a, b) => (b.createdAt ?? 0) - (a.createdAt ?? 0))[0];
   return match?.response ?? null;
+}
+
+// One arena pairwise comparison as stored in / read from the
+// `arenaComparisons` table. aId/bId record the order the applicants were
+// shown to the judge (A first); winnerId/loserId are the verdict.
+export type ArenaComparisonRow = {
+  aId: string;
+  aName: string;
+  bId: string;
+  bName: string;
+  winnerId: string;
+  loserId: string;
+  model: string;
+  promptTokens: number | null;
+  completionTokens: number | null;
+  cost: number | null;
+  createdAt: number;
+};
+
+// Appends one comparison to `arenaComparisons` — append-only, never an
+// upsert: raw comparisons are the durable asset, scores are refit from them.
+export async function saveArenaComparison(
+  entry: Omit<ArenaComparisonRow, "createdAt"> & { reasoning: string }
+): Promise<void> {
+  const client = db();
+  await client.transact(
+    client.tx.arenaComparisons[id()].update({ ...entry, createdAt: Date.now() })
+  );
+}
+
+// All stored comparisons, without the reasoning text (the standings page
+// only needs verdicts; keeps the payload small).
+export async function listArenaComparisons(): Promise<ArenaComparisonRow[]> {
+  const client = db();
+  const res = (await client.query({ arenaComparisons: {} })) as {
+    arenaComparisons?: (Partial<ArenaComparisonRow> & { reasoning?: string })[];
+  };
+  return (res.arenaComparisons ?? [])
+    .filter((r) => r.winnerId && r.loserId)
+    .map((r) => ({
+      aId: r.aId ?? "",
+      aName: r.aName ?? "",
+      bId: r.bId ?? "",
+      bName: r.bName ?? "",
+      winnerId: r.winnerId!,
+      loserId: r.loserId!,
+      model: r.model ?? "",
+      promptTokens: r.promptTokens ?? null,
+      completionTokens: r.completionTokens ?? null,
+      cost: r.cost ?? null,
+      createdAt: r.createdAt ?? 0,
+    }));
 }
 
 // Appends a row to the `pangramResults` table — a run history keyed by

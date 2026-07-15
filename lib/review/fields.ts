@@ -43,6 +43,7 @@ export const F = {
   category: "fldjypeeOTiUQ5K91",
   austinNotes: "fldrOOJCwFyHTCbHh",
   austinPostInterviewNotes: "fldKy6GWifxtJY9fw",
+  decision: "fld0aQAYyhusEH5t7",
   pangramFractionAi: "fldUROVrbmmubq11u",
 } as const;
 
@@ -63,6 +64,10 @@ export const STATUSES = [
   "Duplicate",
 ] as const;
 export type Status = (typeof STATUSES)[number];
+
+// "Decision (post-interview)" single-select, best to worst.
+export const DECISIONS = ["Yes", "Lean yes", "Very unsure", "Lean no", "No"] as const;
+export type Decision = (typeof DECISIONS)[number];
 
 export const CATEGORIES = [
   "AI for Epistemics",
@@ -107,6 +112,7 @@ export type Applicant = {
   blendedPrio: number | null;
   pangramFractionAi: number | null;
   status: Status | null;
+  decision: Decision | null;
   category: string[];
   cofounderNames: string[];
   austinNotes: string;
@@ -188,6 +194,7 @@ export function normalizeApplicant(rec: RawRecord): Applicant {
     blendedPrio: num(f[F.blendedPrio]),
     pangramFractionAi: num(f[F.pangramFractionAi]),
     status: (selectName(f[F.status]) || null) as Status | null,
+    decision: (selectName(f[F.decision]) || null) as Decision | null,
     category,
     cofounderNames,
     austinNotes: str(f[F.austinNotes]),
