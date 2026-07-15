@@ -25,8 +25,10 @@ pairwise judgments are the thing LLMs are actually decent at, and BT turns them 
 Full round-robin is 19,900 pairs (~$400) and mostly redundant — BT only needs a connected
 comparison graph. **v1: ~20 comparisons per applicant ≈ 2,000 pairs ≈ $40**, built as 20 rounds
 of random perfect matchings (guarantees exactly 20/each + connectivity, no duplicate pairs).
-Comparisons are append-only, so we can always buy more resolution later — including adaptive
-rounds that pair applicants with similar current BT scores (Swiss-style) to sharpen the top.
+Comparisons are append-only, so we can always buy more resolution later. A **swiss** pairing
+option runs rounds sequentially instead: refit BT after each round, then pair neighbors by
+current score (avoiding rematches) — comparisons concentrate on close matchups, where a
+verdict carries the most information. Round 1 with no history degenerates to random.
 
 Runtime: each call is ~4–6s (sub-second prefill of ~5k tokens + ~150 output tokens at
 60–80 TPS + TTFT/queue) — TPS is not the bottleneck, so ultra-fast hosts (Cerebras/Groq)

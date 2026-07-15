@@ -10,6 +10,7 @@ import Link from "next/link";
 import { CURATED_MODELS } from "@/lib/review/ai";
 import {
   buildSchedule,
+  buildSwissRound,
   DEFAULT_ARENA_MODEL,
   DEFAULT_ARENA_PROMPT,
   fitBradleyTerry,
@@ -30,6 +31,7 @@ type Config = {
   model: string;
   customModel: string;
   prompt: string;
+  pairing: "random" | "swiss";
   rounds: number; // comparisons per applicant
   concurrency: number;
   statusFilter: string;
@@ -41,6 +43,7 @@ const DEFAULT_CONFIG: Config = {
   model: DEFAULT_ARENA_MODEL,
   customModel: "",
   prompt: DEFAULT_ARENA_PROMPT,
+  pairing: "random",
   rounds: 20,
   concurrency: 25,
   statusFilter: "all",
@@ -251,68 +254,88 @@ export default function ArenaPage() {
     cancelled.current = false;
     setRunning(true);
 
+    const ids = audience.map((a) => a.id);
     const seen = new Set(
       modelComparisons.map((c) => pairKey(c.aId || c.winnerId, c.bId || c.loserId))
     );
-    const schedule = buildSchedule(
-      audience.map((a) => a.id),
-      config.rounds,
-      seen
+    // Local mirror of this model's verdicts — React state updates aren't
+    // readable mid-run, and Swiss re-pairs from a fresh fit between rounds.
+    const local: { winnerId: string; loserId: string }[] = modelComparisons.map(
+      (c) => ({ winnerId: c.winnerId, loserId: c.loserId })
     );
-    setRun({ total: schedule.length, done: 0, errors: [], cost: 0, startedAt: Date.now() });
+    setRun({ total: plannedPairs, done: 0, errors: [], cost: 0, startedAt: Date.now() });
 
-    let next = 0;
-    async function worker() {
-      while (!cancelled.current) {
-        const i = next++;
-        if (i >= schedule.length) return;
-        const [aId, bId] = schedule[i];
-        const a = byId.get(aId)!;
-        const b = byId.get(bId)!;
-        try {
-          const res = await fetch("/api/review/arena/compare", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              a: { id: a.id, name: a.name, text: applicationText(a) },
-              b: { id: b.id, name: b.name, text: applicationText(b) },
-              model,
-              prompt: config.prompt,
-              save: config.save,
-            }),
-          });
-          const data = await res.json();
-          if (!res.ok) throw new Error(data.error ?? `HTTP ${res.status}`);
-          setComparisons((prev) => [
-            ...prev,
-            {
-              aId: a.id,
-              aName: a.name,
-              bId: b.id,
-              bName: b.name,
-              winnerId: data.winnerId,
-              loserId: data.loserId,
-              model,
-              cost: data.usage?.cost ?? null,
-            },
-          ]);
-          setRun((r) =>
-            r && { ...r, done: r.done + 1, cost: r.cost + (data.usage?.cost ?? 0) }
-          );
-        } catch (e) {
-          setRun((r) =>
-            r && {
-              ...r,
-              done: r.done + 1,
-              errors: [...r.errors, `${a.name} vs ${b.name}: ${String(e)}`],
-            }
-          );
-        }
+    async function judgePair([aId, bId]: [string, string]) {
+      const a = byId.get(aId)!;
+      const b = byId.get(bId)!;
+      try {
+        const res = await fetch("/api/review/arena/compare", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            a: { id: a.id, name: a.name, text: applicationText(a) },
+            b: { id: b.id, name: b.name, text: applicationText(b) },
+            model,
+            prompt: config.prompt,
+            save: config.save,
+          }),
+        });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error ?? `HTTP ${res.status}`);
+        local.push({ winnerId: data.winnerId, loserId: data.loserId });
+        setComparisons((prev) => [
+          ...prev,
+          {
+            aId: a.id,
+            aName: a.name,
+            bId: b.id,
+            bName: b.name,
+            winnerId: data.winnerId,
+            loserId: data.loserId,
+            model,
+            cost: data.usage?.cost ?? null,
+          },
+        ]);
+        setRun((r) =>
+          r && { ...r, done: r.done + 1, cost: r.cost + (data.usage?.cost ?? 0) }
+        );
+      } catch (e) {
+        setRun((r) =>
+          r && {
+            ...r,
+            done: r.done + 1,
+            errors: [...r.errors, `${a.name} vs ${b.name}: ${String(e)}`],
+          }
+        );
       }
     }
-    await Promise.all(
-      Array.from({ length: Math.max(1, config.concurrency) }, worker)
-    );
+
+    async function runBatch(pairs: [string, string][]) {
+      let next = 0;
+      async function worker() {
+        while (!cancelled.current) {
+          const i = next++;
+          if (i >= pairs.length) return;
+          await judgePair(pairs[i]);
+        }
+      }
+      await Promise.all(
+        Array.from({ length: Math.max(1, config.concurrency) }, worker)
+      );
+    }
+
+    if (config.pairing === "swiss") {
+      // Sequential rounds: refit BT on everything so far, pair neighbors by
+      // score, judge the round, repeat. Round 1 with no history is random.
+      for (let r = 0; r < config.rounds && !cancelled.current; r++) {
+        const scoreOf = new Map(
+          fitBradleyTerry(local).map((s) => [s.id, s.score])
+        );
+        await runBatch(buildSwissRound(ids, scoreOf, seen));
+      }
+    } else {
+      await runBatch(buildSchedule(ids, config.rounds, seen));
+    }
     setRunning(false);
   }
 
@@ -358,6 +381,23 @@ export default function ArenaPage() {
                 ))}
               </datalist>
             </>
+          )}
+
+          <label className="mt-4 block font-mono text-sm">Pairing</label>
+          <select
+            value={config.pairing}
+            onChange={(e) => set({ pairing: e.target.value as Config["pairing"] })}
+            className="mt-1 w-full border-2 border-ink-dark/40 bg-paper px-2 py-1.5 font-mono text-sm"
+          >
+            <option value="random">random — all matchings scheduled upfront</option>
+            <option value="swiss">swiss — each round pairs similar BT scores</option>
+          </select>
+          {config.pairing === "swiss" && (
+            <p className="mt-1 font-mono text-xs text-ink-dark/50">
+              Rounds run sequentially (refit → re-pair between rounds), so close
+              matchups get the comparisons. Slightly slower wall-clock than
+              random; sharper ranking per dollar.
+            </p>
           )}
 
           <div className="mt-4 flex gap-4 font-mono text-sm">

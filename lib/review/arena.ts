@@ -108,6 +108,45 @@ export function buildSchedule(
   return schedule;
 }
 
+// Builds one Swiss round: sorts by current BT score (random tiebreak, so a
+// cold start degenerates to a random matching) and greedily pairs each
+// applicant with the nearest-scored opponent they haven't played; if every
+// remaining candidate is a rematch, the nearest one is reused (harmless extra
+// data). Concentrates comparisons on close matchups, where a verdict carries
+// the most ranking information. Mutates `seen` with the pairs it emits;
+// display order is a coin flip like buildSchedule.
+export function buildSwissRound(
+  ids: string[],
+  scoreOf: Map<string, number>,
+  seen: Set<string>
+): [string, string][] {
+  const order = shuffle([...ids]).sort(
+    (a, b) => (scoreOf.get(b) ?? 0) - (scoreOf.get(a) ?? 0)
+  );
+  const paired = new Set<string>();
+  const pairs: [string, string][] = [];
+  for (let i = 0; i < order.length; i++) {
+    const x = order[i];
+    if (paired.has(x)) continue;
+    let partner = "";
+    for (let j = i + 1; j < order.length; j++) {
+      const y = order[j];
+      if (paired.has(y)) continue;
+      if (!partner) partner = y; // nearest unpaired, rematch fallback
+      if (!seen.has(pairKey(x, y))) {
+        partner = y;
+        break;
+      }
+    }
+    if (!partner) continue; // odd one out sits the round
+    paired.add(x);
+    paired.add(partner);
+    seen.add(pairKey(x, partner));
+    pairs.push(Math.random() < 0.5 ? [x, partner] : [partner, x]);
+  }
+  return pairs;
+}
+
 export type BTStanding = {
   id: string;
   score: number; // BT logit, mean-centered; P(i beats j) = σ(scoreᵢ − scoreⱼ)
