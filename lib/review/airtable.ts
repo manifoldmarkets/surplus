@@ -25,7 +25,7 @@ async function airtable(path: string, init?: RequestInit): Promise<unknown> {
 
 type RawRecord = { id: string; createdTime: string; fields: Record<string, unknown> };
 
-export async function listApplicants(): Promise<Applicant[]> {
+export async function listApplicants(opts?: { view?: string }): Promise<Applicant[]> {
   const records: RawRecord[] = [];
   let offset: string | undefined;
   do {
@@ -33,6 +33,7 @@ export async function listApplicants(): Promise<Applicant[]> {
       returnFieldsByFieldId: "true",
       pageSize: "100",
     });
+    if (opts?.view) params.set("view", opts.view);
     if (offset) params.set("offset", offset);
     const page = (await airtable(
       `/${BASE_ID}/${APPLICANT_TABLE_ID}?${params}`

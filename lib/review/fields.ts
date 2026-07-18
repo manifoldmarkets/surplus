@@ -5,6 +5,9 @@
 export const BASE_ID = "appaxqJfxht7OronH";
 export const APPLICANT_TABLE_ID = "tblsvqV1tD3rSVMfz";
 
+// The "Admitted" grid view: founders with status Confirmed or Acceptance sent.
+export const ADMITTED_VIEW_ID = "viwShWo4bvatGvhsH";
+
 export const F = {
   name: "fld3gZ52ydW6p4Dxo",
   email: "fld4t5pg8cE0wa3Xt",
@@ -59,8 +62,10 @@ export const STATUSES = [
   "Emailed for interview",
   "Interview scheduled",
   "Interviewed",
-  "Accepted",
+  "Acceptance sent",
+  "Confirmed",
   "Rejected",
+  "Declined",
   "Duplicate",
 ] as const;
 export type Status = (typeof STATUSES)[number];
@@ -114,6 +119,7 @@ export type Applicant = {
   status: Status | null;
   decision: Decision | null;
   category: string[];
+  cofounderIds: string[];
   cofounderNames: string[];
   austinNotes: string;
   austinPostInterviewNotes: string;
@@ -155,9 +161,17 @@ export function normalizeApplicant(rec: RawRecord): Applicant {
   const category = Array.isArray(f[F.category])
     ? (f[F.category] as Cell[]).map(selectName).filter(Boolean)
     : [];
-  const cofounderNames = Array.isArray(f[F.cofounderLink])
-    ? (f[F.cofounderLink] as { name?: string }[]).map((c) => c?.name ?? "").filter(Boolean)
+  // Linked-record cells come back as record-ID strings (or {id, name} objects
+  // in some API shapes) — keep both the ids and any names we can get.
+  const cofounderCells = Array.isArray(f[F.cofounderLink])
+    ? (f[F.cofounderLink] as (string | { id?: string; name?: string })[])
     : [];
+  const cofounderIds = cofounderCells
+    .map((c) => (typeof c === "string" ? c : c?.id ?? ""))
+    .filter(Boolean);
+  const cofounderNames = cofounderCells
+    .map((c) => (typeof c === "string" ? "" : c?.name ?? ""))
+    .filter(Boolean);
   return {
     id: rec.id,
     createdTime: rec.createdTime,
@@ -196,6 +210,7 @@ export function normalizeApplicant(rec: RawRecord): Applicant {
     status: (selectName(f[F.status]) || null) as Status | null,
     decision: (selectName(f[F.decision]) || null) as Decision | null,
     category,
+    cofounderIds,
     cofounderNames,
     austinNotes: str(f[F.austinNotes]),
     austinPostInterviewNotes: str(f[F.austinPostInterviewNotes]),

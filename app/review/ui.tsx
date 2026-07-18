@@ -28,8 +28,10 @@ export const STATUS_COLORS: Record<Status, string> = {
   "Emailed for interview": "bg-ink-yellow/40 text-ink-dark",
   "Interview scheduled": "bg-ink-yellow/60 text-ink-dark",
   Interviewed: "bg-ink-green/25 text-ink-green",
-  Accepted: "bg-ink-green/40 text-ink-green",
+  "Acceptance sent": "bg-ink-green/40 text-ink-green",
+  Confirmed: "bg-ink-green/60 text-paper",
   Rejected: "bg-ink-red/20 text-ink-red",
+  Declined: "bg-ink-red/30 text-ink-red",
   Duplicate: "bg-ink-dark/10 text-ink-dark/60",
 };
 
