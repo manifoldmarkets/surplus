@@ -136,7 +136,7 @@ export default async function Image() {
           }}
         >
           <span>» ORGANIZED BY MANIFUND &amp; MOX</span>
-          <span>3 MONTHS · STARTING LATE JULY</span>
+          <span>3 MONTHS · STARTING EARLY AUGUST</span>
           <span>SAN FRANCISCO</span>
         </div>
 

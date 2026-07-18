@@ -33,7 +33,7 @@ const inconsolata = Inconsolata({
 
 const title = "Surplus — a software incubator";
 const description =
-  "A software incubator for massive public good in the age of transformative AI. Organized by Manifund & Mox. $100k on a SAFE · 3 months · starting late July in San Francisco. Apply by July 10.";
+  "A software incubator for massive public good in the age of transformative AI. Organized by Manifund & Mox. $100k on a SAFE · 3 months · starting early August in San Francisco. Apply by July 10.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://surplus.dev"),

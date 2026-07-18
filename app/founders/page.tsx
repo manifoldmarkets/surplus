@@ -219,7 +219,7 @@ export default async function FoundersPage() {
             <span>
               ☞&nbsp;&nbsp;{founderCount} founders · {groups.length} projects
             </span>
-            <span className="max-bp:hidden">Jul 27 → Oct 16 · San Francisco</span>
+            <span className="max-bp:hidden">Aug 3 → Oct 23 · San Francisco</span>
           </div>
         </div>
       </section>

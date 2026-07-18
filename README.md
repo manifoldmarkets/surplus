@@ -1,4 +1,4 @@
-Surplus is an incubator for software startups, organized by [Manifund](https://manifund.org/) and [Mox](https://moxsf.com/) — to create massive public good in the age of transformative AI. It’s a 3 month program, starting late July in SF. We provide seed funding, advice, peers, intros, and space to focus.
+Surplus is an incubator for software startups, organized by [Manifund](https://manifund.org/) and [Mox](https://moxsf.com/) — to create massive public good in the age of transformative AI. It’s a 3 month program, starting early August in SF. We provide seed funding, advice, peers, intros, and space to focus.
 
 > “Surplus” is the value created through positive-sum trades; what markets produce in abundance.
 
@@ -68,10 +68,10 @@ Examples include:
     *   Apply early for priority review; rolling video interviews
 *   July 10: Applications due
     *   Final deadline; rolling video interviews continue
-*   July 27: Program kickoff
+*   Aug 3: Program kickoff
     *   2 weeks of ideating & cofounder matching
     *   10 weeks of mentorship, dinners with speakers
-*   Oct 16: Demo Day
+*   Oct 23: Demo Day
     *   Pitch to an audience of angels, VCs and philanthropic funders
 
 ## Virtues we cherish

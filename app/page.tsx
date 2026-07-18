@@ -56,7 +56,7 @@ export default function Home() {
 
           <div className="mt-1 flex items-baseline justify-between border-t-[3px] border-ink-dark pt-2.5 font-mono text-sm uppercase tracking-widest max-bp:flex-col max-bp:items-start max-bp:gap-1.5">
             <span>☞&nbsp;&nbsp;Organized by Manifund &amp; Mox</span>
-            <span className="max-bp:hidden">3 months · starting late July</span>
+            <span className="max-bp:hidden">3 months · starting early August</span>
             <span className="max-bp:hidden">San Francisco</span>
             <span className="max-bp:hidden"></span>
             <span className="max-bp:hidden"></span>
@@ -197,7 +197,7 @@ export default function Home() {
                       Months of programming
                     </span>
                     <span className="font-mono text-[13px] uppercase leading-[1.15] tracking-widest text-ink-blue">
-                      Jul 27 → Oct 16
+                      Aug 3 → Oct 23
                     </span>
                   </span>
                 </div>
@@ -251,7 +251,7 @@ export default function Home() {
               <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;Where</span>
               <span className="mt-1 block opacity-85">Office space at Mox, San Francisco.</span>
               <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;When</span>
-              <span className="mt-1 block opacity-85">12 weeks, starting late July.</span>
+              <span className="mt-1 block opacity-85">12 weeks, starting early August.</span>
               <span className="mt-2.5 block text-sm font-bold tracking-widest text-ink-pink">§&nbsp;Cohort</span>
               <span className="mt-1 block opacity-85">~10 founders.</span>
             </div>
@@ -260,7 +260,7 @@ export default function Home() {
               <p className="first-letter:float-left first-letter:pr-2.5 first-letter:pt-1.5 first-letter:font-display first-letter:text-[82px] first-letter:leading-[0.85] first-letter:text-ink-pink max-bp:first-letter:text-6xl">
                 Surplus is an incubator for software startups, organized by <em>Manifund</em> and{" "}
                 <em>Mox</em> — to create <b>massive public good</b> in the age of transformative
-                AI. It&rsquo;s a 3 month program, starting late July in SF. We provide seed
+                AI. It&rsquo;s a 3 month program, starting early August in SF. We provide seed
                 funding, advice, peers, intros, and space to focus.
               </p>
               <p>
@@ -532,7 +532,7 @@ export default function Home() {
             <div className="relative flex min-h-[220px] flex-col border-[3px] border-ink-dark bg-ink-yellow px-[18px] pb-5 pt-[22px] max-bp:min-h-0">
               <div className="font-mono text-sm uppercase tracking-widest opacity-70">No. 06 — Demo Day</div>
               <div className="mt-2.5 font-condensed text-3xl font-bold uppercase leading-none tracking-wide max-bp:text-xl">
-                Demo Day, <span className="text-ink-pink">Oct 16</span>
+                Demo Day, <span className="text-ink-pink">Oct 23</span>
               </div>
               <div className="mt-auto pt-3 font-serif text-sm italic leading-snug">
                 Pitch to aligned VCs and philanthropic funders.
@@ -609,7 +609,7 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-[160px_60px_1fr_240px] items-center gap-6 border-b-[3px] border-ink-dark py-[22px] max-bp:grid-cols-[88px_24px_1fr] max-bp:gap-3.5">
-              <span className="font-display text-xl leading-none text-ink-pink max-bp:text-lg">Jul 27</span>
+              <span className="font-display text-xl leading-none text-ink-pink max-bp:text-lg">Aug 3</span>
               <span className="h-7 w-7 justify-self-center rounded-full bg-ink-pink shadow-[0_0_0_4px_var(--color-paper),0_0_0_5.5px_var(--color-ink-pink)]"></span>
               <div>
                 <div className="font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
@@ -626,7 +626,7 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-[160px_60px_1fr_240px] items-center gap-6 border-b-[3px] border-ink-dark py-[22px] max-bp:grid-cols-[88px_24px_1fr] max-bp:gap-3.5">
-              <span className="font-display text-xl leading-none text-ink-pink max-bp:text-lg">Oct 16</span>
+              <span className="font-display text-xl leading-none text-ink-pink max-bp:text-lg">Oct 23</span>
               <span className="h-7 w-7 justify-self-center rounded-full bg-ink-pink shadow-[0_0_0_4px_var(--color-paper),0_0_0_5.5px_var(--color-ink-pink)]"></span>
               <div>
                 <div className="font-condensed text-3xl font-bold uppercase leading-tight max-bp:text-xl">
