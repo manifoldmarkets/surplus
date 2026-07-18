@@ -47,6 +47,32 @@ function prettyUrl(url: string): string {
 
 const isPending = (a: Applicant) => a.status === "Acceptance sent";
 
+// Only these whitelisted, already-sanitized fields may reach the render tree.
+// Full Applicant records carry sensitive data (email, reviewer notes, AI
+// grades) — project them away at the fetch boundary so no future refactor
+// (e.g. a client component) can accidentally serialize them.
+type PublicFounder = {
+  name: string;
+  about: string;
+  ideaShort: string;
+  ideaLinks: string[];
+  ideaLong: string;
+  otherIdeas: string;
+  pending: boolean;
+};
+
+function toPublic(a: Applicant): PublicFounder {
+  return {
+    name: a.name,
+    about: extractUrls(a.link1)[0] ?? "",
+    ideaShort: clean(a.ideaShort),
+    ideaLinks: extractUrls(a.ideaLink),
+    ideaLong: clean(a.mainIdea),
+    otherIdeas: clean(a.otherInterests),
+    pending: isPending(a),
+  };
+}
+
 // Group cofounding teams (connected components over the cofounder links,
 // restricted to the admitted set), teams first, both in view order.
 function groupFounders(list: Applicant[]): Applicant[][] {
@@ -103,16 +129,12 @@ function Expand({ label, text }: { label: string; text: string }) {
   );
 }
 
-function FounderCell({ a, className = "" }: { a: Applicant; className?: string }) {
-  const about = extractUrls(a.link1)[0];
-  const ideaLinks = extractUrls(a.ideaLink);
-  const ideaLong = clean(a.mainIdea);
-  const otherIdeas = clean(a.otherInterests);
+function FounderCell({ f, className = "" }: { f: PublicFounder; className?: string }) {
   return (
     <div className={`flex min-w-0 flex-col px-4 pb-4 pt-3.5 ${className}`}>
       <h3 className="text-balance font-condensed text-[22px] font-bold uppercase leading-[0.95] tracking-wide">
-        {a.name}
-        {isPending(a) && (
+        {f.name}
+        {f.pending && (
           // Absolutely positioned so the oversized glyph never shifts the
           // name's line box.
           <span className="relative inline-block w-2">
@@ -126,24 +148,24 @@ function FounderCell({ a, className = "" }: { a: Applicant; className?: string }
           </span>
         )}
       </h3>
-      {about && (
+      {f.about && (
         <a
-          href={about}
+          href={f.about}
           target="_blank"
           rel="noopener noreferrer"
           className="mt-1.5 self-start font-mono text-[11px] uppercase tracking-widest text-ink-blue underline decoration-1 underline-offset-2 hover:bg-ink-yellow hover:text-ink-dark hover:no-underline"
         >
-          ☞ {prettyUrl(about)}
+          ☞ {prettyUrl(f.about)}
         </a>
       )}
-      {clean(a.ideaShort) && (
+      {f.ideaShort && (
         <p className="mt-2 text-pretty font-serif text-[15px] italic leading-snug text-ink-dark">
-          {a.ideaShort}
+          {f.ideaShort}
         </p>
       )}
-      {ideaLinks.length > 0 && (
+      {f.ideaLinks.length > 0 && (
         <div className="mt-1 flex flex-wrap gap-x-3 gap-y-0.5">
-          {ideaLinks.map((u) => (
+          {f.ideaLinks.map((u) => (
             <a
               key={u}
               href={u}
@@ -156,8 +178,8 @@ function FounderCell({ a, className = "" }: { a: Applicant; className?: string }
           ))}
         </div>
       )}
-      {ideaLong && <Expand label="Full idea" text={ideaLong} />}
-      {otherIdeas && <Expand label="Other ideas" text={otherIdeas} />}
+      {f.ideaLong && <Expand label="Full idea" text={f.ideaLong} />}
+      {f.otherIdeas && <Expand label="Other ideas" text={f.otherIdeas} />}
     </div>
   );
 }
@@ -174,10 +196,13 @@ function GroupLabel({ children }: { children: React.ReactNode }) {
 
 export default async function FoundersPage() {
   const admitted = await listApplicants({ view: ADMITTED_VIEW_ID });
-  const groups = groupFounders(admitted);
+  // Grouping needs record ids; everything after this line sees only the
+  // whitelisted PublicFounder projection.
+  const groups = groupFounders(admitted).map((g) => g.map(toPublic));
+  const founderCount = groups.reduce((n, g) => n + g.length, 0);
   const teams = groups.filter((g) => g.length > 1);
   const solos = groups.filter((g) => g.length === 1);
-  const anyPending = admitted.some(isPending);
+  const anyPending = groups.some((g) => g.some((f) => f.pending));
   // Team cards span 2 of the 4 desktop columns; square off the frame when the
   // team rows don't fill the last row exactly.
   const teamFillerCols = (4 - ((teams.length * 2) % 4)) % 4;
@@ -192,7 +217,7 @@ export default async function FoundersPage() {
           </h1>
           <div className="mt-1.5 flex items-baseline justify-between border-t-[3px] border-ink-dark pt-2 font-mono text-sm uppercase tracking-widest max-bp:flex-col max-bp:items-start max-bp:gap-1">
             <span>
-              ☞&nbsp;&nbsp;{admitted.length} founders · {groups.length} projects
+              ☞&nbsp;&nbsp;{founderCount} founders · {groups.length} projects
             </span>
             <span className="max-bp:hidden">Jul 27 → Oct 16 · San Francisco</span>
           </div>
@@ -210,12 +235,12 @@ export default async function FoundersPage() {
             {teams.length > 0 && <GroupLabel>— Cofounding teams —</GroupLabel>}
             {teams.map((team) => (
               <article
-                key={team[0].id}
+                key={team[0].name}
                 className="col-span-2 border-b-[3px] border-r-[3px] border-ink-dark bg-paper max-sm:col-span-full"
               >
                 <div className="flex items-stretch max-sm:flex-col">
-                  {team.map((a, mi) => (
-                    <Fragment key={a.id}>
+                  {team.map((f, mi) => (
+                    <Fragment key={f.name}>
                       {mi > 0 && (
                         <div className="relative flex items-center justify-center px-0.5 max-sm:py-1">
                           <span
@@ -227,7 +252,7 @@ export default async function FoundersPage() {
                           </span>
                         </div>
                       )}
-                      <FounderCell a={a} className="flex-1" />
+                      <FounderCell f={f} className="flex-1" />
                     </Fragment>
                   ))}
                 </div>
@@ -242,12 +267,12 @@ export default async function FoundersPage() {
             )}
 
             {solos.length > 0 && <GroupLabel>— Solo founders —</GroupLabel>}
-            {solos.map(([a]) => (
+            {solos.map(([f]) => (
               <article
-                key={a.id}
+                key={f.name}
                 className="border-b-[3px] border-r-[3px] border-ink-dark bg-paper"
               >
-                <FounderCell a={a} />
+                <FounderCell f={f} />
               </article>
             ))}
           </div>
